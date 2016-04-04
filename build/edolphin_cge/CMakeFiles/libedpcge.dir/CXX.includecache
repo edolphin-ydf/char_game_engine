@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_cge/Game.cpp
+Game.h
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_cge/Game.h
+
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_cge/Game.h
+

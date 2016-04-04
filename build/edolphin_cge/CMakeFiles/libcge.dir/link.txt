@@ -1,0 +1,2 @@
+/usr/bin/ar cq ../lib/libcge.a  CMakeFiles/libcge.dir/Game.o
+/usr/bin/ranlib ../lib/libcge.a

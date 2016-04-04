@@ -1,0 +1,5 @@
+-x
+c++
+-I/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base
+-I/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_cge
+-std=c++11

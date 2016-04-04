@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/ArcObject.cpp
+ArcObject.h
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/ArcObject.h
+AutoReleasePoolManager.h
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/AutoReleasePoolManager.h
+AutoReleasePool.h
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/AutoReleasePool.h
+sstream
+-
+
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/ArcObject.h
+stdio.h
+-
+string
+-
+GetterSetter.h
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/GetterSetter.h
+
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/AutoReleasePool.cpp
+AutoReleasePool.h
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/AutoReleasePool.h
+ArcObject.h
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/ArcObject.h
+
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/AutoReleasePool.h
+list
+-
+
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/AutoReleasePoolManager.h
+queue
+-
+
+/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/GetterSetter.h
+

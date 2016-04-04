@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11   CMakeFiles/test_game.dir/Main.o  -o test_game  -L/home/yangdongfeng/documents/cpp/char_game_engine/build/lib -rdynamic ../lib/libedpbase.a ../lib/libedpcge.a -Wl,-rpath,/home/yangdongfeng/documents/cpp/char_game_engine/build/lib 

@@ -1,0 +1,2 @@
+/usr/bin/ar cq ../lib/libedpbase.a  CMakeFiles/libedpbase.dir/ArcObject.o CMakeFiles/libedpbase.dir/AutoReleasePool.o
+/usr/bin/ranlib ../lib/libedpbase.a
