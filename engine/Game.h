@@ -1,7 +1,10 @@
 #ifndef _GAME_H_
 #define _GAME_H_ 
 
+#include "PainterDelegate.h"
+
 namespace edolphin {
+
 class Game {
 public:
 	void init();
@@ -17,6 +20,8 @@ private:
 	volatile bool finished = false;
 
 	bool showColor = false;
+
+	PainterDelegate *painter;
 };
 
 }	// edolphin

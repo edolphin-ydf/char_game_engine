@@ -1,6 +1,9 @@
 #ifndef PAINTERDELEGATE_H_2ZTOIORH
 #define PAINTERDELEGATE_H_2ZTOIORH
 
+
+#include "Point2D.h"
+
 namespace edolphin {
 
 class PainterDelegate
@@ -13,9 +16,8 @@ public:
 	virtual void destory() = 0;
 	virtual void refresh() = 0;
 
-	virtual void drawPixel() = 0;
-	virtual void drawPoint() = 0;
-	virtual void drawLine() = 0;
+	virtual void drawPoint(Point2D point) = 0;
+	virtual void drawLine(Point2D begin, Point2D end) = 0;
 	virtual void drawRectangle() = 0;
 	virtual void drawCircles() = 0;
 	virtual void drawPicture(char *data) = 0;

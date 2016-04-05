@@ -1,6 +1,9 @@
 #include "PainterCursor.h"
 
+#include <curses.h>
+
 namespace edolphin {
+
 PainterCursor::PainterCursor (){
 
 }
@@ -10,11 +13,15 @@ PainterCursor::~PainterCursor () {
 }
 
 void PainterCursor::init() {
+	initscr();	
+	use_default_colors();	// black backgroupd and white forground
+	noecho();	// no echo with input
+	cbreak();	// no need for cr
 
 }
 
 void PainterCursor::destory() {
-
+	endwin();
 }
 
 void PainterCursor::refresh() {
