@@ -13,9 +13,9 @@ else()
 	message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
 endif()
 
-add_subdirectory(edolphin_base)
+add_subdirectory(base)
 
-add_subdirectory(edolphin_cge)
+add_subdirectory(engine)
 
 add_subdirectory(testgame)
 

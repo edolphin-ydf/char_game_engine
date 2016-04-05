@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/ArcObject.cpp" "/home/yangdongfeng/documents/cpp/char_game_engine/build/edolphin_base/CMakeFiles/libedpbase.dir/ArcObject.o"
-  "/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_base/AutoReleasePool.cpp" "/home/yangdongfeng/documents/cpp/char_game_engine/build/edolphin_base/CMakeFiles/libedpbase.dir/AutoReleasePool.o"
+  "/home/edolphin/documents/cpp/char_game_engine/edolphin_base/ArcObject.cpp" "/home/edolphin/documents/cpp/char_game_engine/build/edolphin_base/CMakeFiles/libedpbase.dir/ArcObject.o"
+  "/home/edolphin/documents/cpp/char_game_engine/edolphin_base/AutoReleasePool.cpp" "/home/edolphin/documents/cpp/char_game_engine/build/edolphin_base/CMakeFiles/libedpbase.dir/AutoReleasePool.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

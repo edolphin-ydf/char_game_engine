@@ -42,10 +42,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yangdongfeng/documents/cpp/char_game_engine
+CMAKE_SOURCE_DIR = /home/edolphin/documents/cpp/char_game_engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yangdongfeng/documents/cpp/char_game_engine/build
+CMAKE_BINARY_DIR = /home/edolphin/documents/cpp/char_game_engine/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles /home/yangdongfeng/documents/cpp/char_game_engine/build/edolphin_cge/CMakeFiles/progress.marks
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 edolphin_cge/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles 0
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles /home/edolphin/documents/cpp/char_game_engine/build/edolphin_cge/CMakeFiles/progress.marks
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 edolphin_cge/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 edolphin_cge/clean
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 edolphin_cge/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,22 +88,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 edolphin_cge/preinstall
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 edolphin_cge/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 edolphin_cge/preinstall
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 edolphin_cge/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 edolphin_cge/CMakeFiles/libedpcge.dir/rule:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 edolphin_cge/CMakeFiles/libedpcge.dir/rule
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 edolphin_cge/CMakeFiles/libedpcge.dir/rule
 .PHONY : edolphin_cge/CMakeFiles/libedpcge.dir/rule
 
 # Convenience name for target.
@@ -112,22 +112,22 @@ libedpcge: edolphin_cge/CMakeFiles/libedpcge.dir/rule
 
 # fast build rule for target.
 libedpcge/fast:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f edolphin_cge/CMakeFiles/libedpcge.dir/build.make edolphin_cge/CMakeFiles/libedpcge.dir/build
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f edolphin_cge/CMakeFiles/libedpcge.dir/build.make edolphin_cge/CMakeFiles/libedpcge.dir/build
 .PHONY : libedpcge/fast
 
 # target to build an object file
 Game.o:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f edolphin_cge/CMakeFiles/libedpcge.dir/build.make edolphin_cge/CMakeFiles/libedpcge.dir/Game.o
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f edolphin_cge/CMakeFiles/libedpcge.dir/build.make edolphin_cge/CMakeFiles/libedpcge.dir/Game.o
 .PHONY : Game.o
 
 # target to preprocess a source file
 Game.i:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f edolphin_cge/CMakeFiles/libedpcge.dir/build.make edolphin_cge/CMakeFiles/libedpcge.dir/Game.i
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f edolphin_cge/CMakeFiles/libedpcge.dir/build.make edolphin_cge/CMakeFiles/libedpcge.dir/Game.i
 .PHONY : Game.i
 
 # target to generate assembly for a file
 Game.s:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f edolphin_cge/CMakeFiles/libedpcge.dir/build.make edolphin_cge/CMakeFiles/libedpcge.dir/Game.s
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f edolphin_cge/CMakeFiles/libedpcge.dir/build.make edolphin_cge/CMakeFiles/libedpcge.dir/Game.s
 .PHONY : Game.s
 
 # Help Target
@@ -153,6 +153,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

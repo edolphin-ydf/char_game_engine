@@ -1,4 +1,4 @@
-# Install script for directory: /home/yangdongfeng/documents/cpp/char_game_engine/testgame
+# Install script for directory: /home/edolphin/documents/cpp/char_game_engine/testgame
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

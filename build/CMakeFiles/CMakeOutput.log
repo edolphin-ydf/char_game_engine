@@ -1,4 +1,4 @@
-The system is: Linux - 4.2.0-22-generic - x86_64
+The system is: Linux - 4.2.0-16-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/3.2.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/3.2.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,35 +23,35 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/3.2.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/3.2.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
+Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1983511863/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1983511863.dir/build.make CMakeFiles/cmTryCompileExec1983511863.dir/build
-make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1983511863.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1983511863.dir/testCCompiler.c.o   -c /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec1983511863
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1983511863.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec1983511863.dir/testCCompiler.c.o  -o cmTryCompileExec1983511863 -rdynamic 
-make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1344072309/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1344072309.dir/build.make CMakeFiles/cmTryCompileExec1344072309.dir/build
+make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1344072309.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1344072309.dir/testCCompiler.c.o   -c /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec1344072309
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1344072309.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1344072309.dir/testCCompiler.c.o  -o cmTryCompileExec1344072309 -rdynamic 
+make[1]: Leaving directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
+Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3301009244/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3301009244.dir/build.make CMakeFiles/cmTryCompileExec3301009244.dir/build
-make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3301009244.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3301009244.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec3301009244
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3301009244.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTryCompileExec3301009244.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3301009244 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec211543674/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec211543674.dir/build.make CMakeFiles/cmTryCompileExec211543674.dir/build
+make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec211543674.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec211543674.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec211543674
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec211543674.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTryCompileExec211543674.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec211543674 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -61,24 +61,24 @@ Thread model: posix
 gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3301009244' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUUrwMZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3301009244 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec3301009244.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec211543674' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cceQndTo.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec211543674 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec211543674.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec3301009244/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3301009244.dir/build.make CMakeFiles/cmTryCompileExec3301009244.dir/build]
-  ignore line: [make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec3301009244.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3301009244.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec3301009244]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3301009244.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTryCompileExec3301009244.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3301009244 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec211543674/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec211543674.dir/build.make CMakeFiles/cmTryCompileExec211543674.dir/build]
+  ignore line: [make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec211543674.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec211543674.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec211543674]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec211543674.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTryCompileExec211543674.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec211543674 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -88,13 +88,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3301009244' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUUrwMZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3301009244 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec3301009244.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec211543674' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cceQndTo.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec211543674 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec211543674.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccUUrwMZ.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cceQndTo.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -112,7 +112,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec3301009244] ==> ignore
+    arg [cmTryCompileExec211543674] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -124,7 +124,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTryCompileExec3301009244.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec211543674.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -156,18 +156,18 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
+Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec989404229/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec989404229.dir/build.make CMakeFiles/cmTryCompileExec989404229.dir/build
-make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec989404229.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec989404229.dir/feature_tests.c.o   -c /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec989404229
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec989404229.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec989404229.dir/feature_tests.c.o  -o cmTryCompileExec989404229 -rdynamic 
-make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec393790798/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec393790798.dir/build.make CMakeFiles/cmTryCompileExec393790798.dir/build
+make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec393790798.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec393790798.dir/feature_tests.c.o   -c /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec393790798
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec393790798.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec393790798.dir/feature_tests.c.o  -o cmTryCompileExec393790798 -rdynamic 
+make[1]: Leaving directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -177,18 +177,18 @@ make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/bu
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
+Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2736063069/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2736063069.dir/build.make CMakeFiles/cmTryCompileExec2736063069.dir/build
-make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2736063069.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec2736063069.dir/feature_tests.c.o   -c /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec2736063069
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2736063069.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec2736063069.dir/feature_tests.c.o  -o cmTryCompileExec2736063069 -rdynamic 
-make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3225160011/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3225160011.dir/build.make CMakeFiles/cmTryCompileExec3225160011.dir/build
+make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3225160011.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec3225160011.dir/feature_tests.c.o   -c /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec3225160011
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3225160011.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3225160011.dir/feature_tests.c.o  -o cmTryCompileExec3225160011 -rdynamic 
+make[1]: Leaving directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -198,18 +198,18 @@ make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/bu
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
+Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2803343277/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2803343277.dir/build.make CMakeFiles/cmTryCompileExec2803343277.dir/build
-make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2803343277.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec2803343277.dir/feature_tests.c.o   -c /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec2803343277
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2803343277.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec2803343277.dir/feature_tests.c.o  -o cmTryCompileExec2803343277 -rdynamic 
-make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec352212277/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec352212277.dir/build.make CMakeFiles/cmTryCompileExec352212277.dir/build
+make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec352212277.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec352212277.dir/feature_tests.c.o   -c /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec352212277
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec352212277.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec352212277.dir/feature_tests.c.o  -o cmTryCompileExec352212277 -rdynamic 
+make[1]: Leaving directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -217,32 +217,32 @@ make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/bu
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
+Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1904925744/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1904925744.dir/build.make CMakeFiles/cmTryCompileExec1904925744.dir/build
-make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1904925744.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1904925744.dir/testCXXCompiler.cxx.o -c /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec1904925744
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1904925744.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec1904925744.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1904925744 -rdynamic 
-make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1985685953/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1985685953.dir/build.make CMakeFiles/cmTryCompileExec1985685953.dir/build
+make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1985685953.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1985685953.dir/testCXXCompiler.cxx.o -c /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1985685953
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1985685953.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec1985685953.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1985685953 -rdynamic 
+make[1]: Leaving directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
+Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1843819476/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1843819476.dir/build.make CMakeFiles/cmTryCompileExec1843819476.dir/build
-make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1843819476.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1843819476.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec1843819476
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1843819476.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTryCompileExec1843819476.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1843819476 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec452481288/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec452481288.dir/build.make CMakeFiles/cmTryCompileExec452481288.dir/build
+make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec452481288.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec452481288.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec452481288
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec452481288.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTryCompileExec452481288.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec452481288 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -252,24 +252,24 @@ Thread model: posix
 gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1843819476' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGtDfSl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1843819476 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec1843819476.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec452481288' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccy5FZGQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec452481288 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec452481288.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec1843819476/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1843819476.dir/build.make CMakeFiles/cmTryCompileExec1843819476.dir/build]
-  ignore line: [make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1843819476.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1843819476.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec1843819476]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1843819476.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTryCompileExec1843819476.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1843819476 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec452481288/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec452481288.dir/build.make CMakeFiles/cmTryCompileExec452481288.dir/build]
+  ignore line: [make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec452481288.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec452481288.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec452481288]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec452481288.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTryCompileExec452481288.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec452481288 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -279,13 +279,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1843819476' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGtDfSl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1843819476 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec1843819476.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec452481288' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccy5FZGQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec452481288 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec452481288.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccGtDfSl.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccy5FZGQ.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -303,7 +303,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec1843819476] ==> ignore
+    arg [cmTryCompileExec452481288] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -315,7 +315,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTryCompileExec1843819476.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec452481288.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -345,18 +345,18 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
+Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2017891206/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2017891206.dir/build.make CMakeFiles/cmTryCompileExec2017891206.dir/build
-make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2017891206.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTryCompileExec2017891206.dir/feature_tests.cxx.o -c /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec2017891206
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2017891206.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec2017891206.dir/feature_tests.cxx.o  -o cmTryCompileExec2017891206 -rdynamic 
-make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3775639711/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3775639711.dir/build.make CMakeFiles/cmTryCompileExec3775639711.dir/build
+make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3775639711.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTryCompileExec3775639711.dir/feature_tests.cxx.o -c /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec3775639711
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3775639711.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec3775639711.dir/feature_tests.cxx.o  -o cmTryCompileExec3775639711 -rdynamic 
+make[1]: Leaving directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -419,18 +419,18 @@ make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/bu
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
+Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2844997441/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2844997441.dir/build.make CMakeFiles/cmTryCompileExec2844997441.dir/build
-make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2844997441.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec2844997441.dir/feature_tests.cxx.o -c /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec2844997441
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2844997441.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec2844997441.dir/feature_tests.cxx.o  -o cmTryCompileExec2844997441 -rdynamic 
-make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2535023592/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2535023592.dir/build.make CMakeFiles/cmTryCompileExec2535023592.dir/build
+make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2535023592.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec2535023592.dir/feature_tests.cxx.o -c /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2535023592
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2535023592.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2535023592.dir/feature_tests.cxx.o  -o cmTryCompileExec2535023592 -rdynamic 
+make[1]: Leaving directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -493,18 +493,18 @@ make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/bu
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
+Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec871593889/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec871593889.dir/build.make CMakeFiles/cmTryCompileExec871593889.dir/build
-make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec871593889.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec871593889.dir/feature_tests.cxx.o -c /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec871593889
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec871593889.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec871593889.dir/feature_tests.cxx.o  -o cmTryCompileExec871593889 -rdynamic 
-make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2039770945/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2039770945.dir/build.make CMakeFiles/cmTryCompileExec2039770945.dir/build
+make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2039770945.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec2039770945.dir/feature_tests.cxx.o -c /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2039770945
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2039770945.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2039770945.dir/feature_tests.cxx.o  -o cmTryCompileExec2039770945 -rdynamic 
+make[1]: Leaving directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -565,34 +565,34 @@ make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/bu
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeded with the following output:
-Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
+Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec4192484008/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec4192484008.dir/build.make CMakeFiles/cmTryCompileExec4192484008.dir/build
-make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec4192484008.dir/src.cxx.o
-/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTryCompileExec4192484008.dir/src.cxx.o -c /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTryCompileExec4192484008
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4192484008.dir/link.txt --verbose=1
-/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11    CMakeFiles/cmTryCompileExec4192484008.dir/src.cxx.o  -o cmTryCompileExec4192484008 -rdynamic 
-make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec781154385/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec781154385.dir/build.make CMakeFiles/cmTryCompileExec781154385.dir/build
+make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec781154385.dir/src.cxx.o
+/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTryCompileExec781154385.dir/src.cxx.o -c /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec781154385
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec781154385.dir/link.txt --verbose=1
+/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11    CMakeFiles/cmTryCompileExec781154385.dir/src.cxx.o  -o cmTryCompileExec781154385 -rdynamic 
+make[1]: Leaving directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
 
 Source file was:
 int main() { return 0; }
 Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX0X succeded with the following output:
-Change Dir: /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
+Change Dir: /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1529061598/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1529061598.dir/build.make CMakeFiles/cmTryCompileExec1529061598.dir/build
-make[1]: Entering directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1529061598.dir/src.cxx.o
-/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX0X   -std=c++0x -o CMakeFiles/cmTryCompileExec1529061598.dir/src.cxx.o -c /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTryCompileExec1529061598
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1529061598.dir/link.txt --verbose=1
-/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX0X    CMakeFiles/cmTryCompileExec1529061598.dir/src.cxx.o  -o cmTryCompileExec1529061598 -rdynamic 
-make[1]: Leaving directory '/home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2235032507/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2235032507.dir/build.make CMakeFiles/cmTryCompileExec2235032507.dir/build
+make[1]: Entering directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2235032507.dir/src.cxx.o
+/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX0X   -std=c++0x -o CMakeFiles/cmTryCompileExec2235032507.dir/src.cxx.o -c /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2235032507
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2235032507.dir/link.txt --verbose=1
+/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX0X    CMakeFiles/cmTryCompileExec2235032507.dir/src.cxx.o  -o cmTryCompileExec2235032507 -rdynamic 
+make[1]: Leaving directory '/home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/CMakeTmp'
 
 Source file was:
 int main() { return 0; }

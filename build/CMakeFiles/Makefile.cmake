@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../base/CMakeLists.txt"
   "CMakeFiles/3.2.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.2.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.2.2/CMakeSystem.cmake"
-  "../edolphin_base/CMakeLists.txt"
-  "../edolphin_cge/CMakeLists.txt"
+  "../engine/CMakeLists.txt"
   "../testgame/CMakeLists.txt"
   "/usr/share/cmake-3.2/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeCXXInformation.cmake"
@@ -42,14 +42,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "edolphin_base/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "edolphin_cge/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "base/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "engine/CMakeFiles/CMakeDirectoryInformation.cmake"
   "testgame/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "edolphin_base/CMakeFiles/libedpbase.dir/DependInfo.cmake"
-  "edolphin_cge/CMakeFiles/libedpcge.dir/DependInfo.cmake"
+  "base/CMakeFiles/libbase.dir/DependInfo.cmake"
+  "engine/CMakeFiles/libengine.dir/DependInfo.cmake"
   "testgame/CMakeFiles/test_game.dir/DependInfo.cmake"
   )

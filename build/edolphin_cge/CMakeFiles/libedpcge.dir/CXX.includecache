@@ -6,9 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_cge/Game.cpp
-Game.h
-/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_cge/Game.h
+../edolphin_base/ArcObject.h
+stdio.h
+-
+string
+-
+GetterSetter.h
+../edolphin_base/GetterSetter.h
 
-/home/yangdongfeng/documents/cpp/char_game_engine/edolphin_cge/Game.h
+../edolphin_base/GetterSetter.h
+
+/home/edolphin/documents/cpp/char_game_engine/edolphin_cge/Game.cpp
+Game.h
+/home/edolphin/documents/cpp/char_game_engine/edolphin_cge/Game.h
+ArcObject.h
+/home/edolphin/documents/cpp/char_game_engine/edolphin_cge/ArcObject.h
+
+/home/edolphin/documents/cpp/char_game_engine/edolphin_cge/Game.h
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/yangdongfeng/documents/cpp/char_game_engine
+# Install script for directory: /home/edolphin/documents/cpp/char_game_engine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yangdongfeng/documents/cpp/char_game_engine/build/edolphin_base/cmake_install.cmake")
-  include("/home/yangdongfeng/documents/cpp/char_game_engine/build/edolphin_cge/cmake_install.cmake")
-  include("/home/yangdongfeng/documents/cpp/char_game_engine/build/testgame/cmake_install.cmake")
+  include("/home/edolphin/documents/cpp/char_game_engine/build/base/cmake_install.cmake")
+  include("/home/edolphin/documents/cpp/char_game_engine/build/engine/cmake_install.cmake")
+  include("/home/edolphin/documents/cpp/char_game_engine/build/testgame/cmake_install.cmake")
 
 endif()
 
@@ -48,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yangdongfeng/documents/cpp/char_game_engine/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/edolphin/documents/cpp/char_game_engine/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

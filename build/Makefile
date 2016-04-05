@@ -42,10 +42,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yangdongfeng/documents/cpp/char_game_engine
+CMAKE_SOURCE_DIR = /home/edolphin/documents/cpp/char_game_engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yangdongfeng/documents/cpp/char_game_engine/build
+CMAKE_BINARY_DIR = /home/edolphin/documents/cpp/char_game_engine/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -102,30 +102,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named libedpbase
+# Target rules for targets named libbase
 
 # Build rule for target.
-libedpbase: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libedpbase
-.PHONY : libedpbase
+libbase: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libbase
+.PHONY : libbase
 
 # fast build rule for target.
-libedpbase/fast:
-	$(MAKE) -f edolphin_base/CMakeFiles/libedpbase.dir/build.make edolphin_base/CMakeFiles/libedpbase.dir/build
-.PHONY : libedpbase/fast
+libbase/fast:
+	$(MAKE) -f base/CMakeFiles/libbase.dir/build.make base/CMakeFiles/libbase.dir/build
+.PHONY : libbase/fast
 
 #=============================================================================
-# Target rules for targets named libedpcge
+# Target rules for targets named libengine
 
 # Build rule for target.
-libedpcge: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libedpcge
-.PHONY : libedpcge
+libengine: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libengine
+.PHONY : libengine
 
 # fast build rule for target.
-libedpcge/fast:
-	$(MAKE) -f edolphin_cge/CMakeFiles/libedpcge.dir/build.make edolphin_cge/CMakeFiles/libedpcge.dir/build
-.PHONY : libedpcge/fast
+libengine/fast:
+	$(MAKE) -f engine/CMakeFiles/libengine.dir/build.make engine/CMakeFiles/libengine.dir/build
+.PHONY : libengine/fast
 
 #=============================================================================
 # Target rules for targets named test_game
@@ -148,8 +148,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... libedpbase"
-	@echo "... libedpcge"
+	@echo "... libbase"
+	@echo "... libengine"
 	@echo "... test_game"
 .PHONY : help
 

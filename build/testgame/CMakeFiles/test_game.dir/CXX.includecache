@@ -16,7 +16,7 @@ GetterSetter.h
 
 ../edolphin_base/GetterSetter.h
 
-/home/yangdongfeng/documents/cpp/char_game_engine/testgame/Main.cpp
+/home/edolphin/documents/cpp/char_game_engine/testgame/Main.cpp
 stdio.h
 -
 stdlib.h
@@ -26,5 +26,5 @@ string.h
 memory
 -
 ArcObject.h
-/home/yangdongfeng/documents/cpp/char_game_engine/testgame/ArcObject.h
+/home/edolphin/documents/cpp/char_game_engine/testgame/ArcObject.h
 

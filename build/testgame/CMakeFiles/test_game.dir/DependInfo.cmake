@@ -4,20 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yangdongfeng/documents/cpp/char_game_engine/testgame/Main.cpp" "/home/yangdongfeng/documents/cpp/char_game_engine/build/testgame/CMakeFiles/test_game.dir/Main.o"
+  "/home/edolphin/documents/cpp/char_game_engine/testgame/Main.cpp" "/home/edolphin/documents/cpp/char_game_engine/build/testgame/CMakeFiles/test_game.dir/Main.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/yangdongfeng/documents/cpp/char_game_engine/build/edolphin_base/CMakeFiles/libedpbase.dir/DependInfo.cmake"
-  "/home/yangdongfeng/documents/cpp/char_game_engine/build/edolphin_cge/CMakeFiles/libedpcge.dir/DependInfo.cmake"
+  "/home/edolphin/documents/cpp/char_game_engine/build/base/CMakeFiles/libbase.dir/DependInfo.cmake"
+  "/home/edolphin/documents/cpp/char_game_engine/build/engine/CMakeFiles/libengine.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../edolphin_cge"
-  "../edolphin_base"
+  "../base"
+  "../engine"
   )
 set(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 set(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

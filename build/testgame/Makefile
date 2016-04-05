@@ -42,10 +42,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yangdongfeng/documents/cpp/char_game_engine
+CMAKE_SOURCE_DIR = /home/edolphin/documents/cpp/char_game_engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yangdongfeng/documents/cpp/char_game_engine/build
+CMAKE_BINARY_DIR = /home/edolphin/documents/cpp/char_game_engine/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles /home/yangdongfeng/documents/cpp/char_game_engine/build/testgame/CMakeFiles/progress.marks
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 testgame/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yangdongfeng/documents/cpp/char_game_engine/build/CMakeFiles 0
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles /home/edolphin/documents/cpp/char_game_engine/build/testgame/CMakeFiles/progress.marks
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 testgame/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edolphin/documents/cpp/char_game_engine/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 testgame/clean
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 testgame/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,22 +88,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 testgame/preinstall
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 testgame/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 testgame/preinstall
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 testgame/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 testgame/CMakeFiles/test_game.dir/rule:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 testgame/CMakeFiles/test_game.dir/rule
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f CMakeFiles/Makefile2 testgame/CMakeFiles/test_game.dir/rule
 .PHONY : testgame/CMakeFiles/test_game.dir/rule
 
 # Convenience name for target.
@@ -112,22 +112,22 @@ test_game: testgame/CMakeFiles/test_game.dir/rule
 
 # fast build rule for target.
 test_game/fast:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f testgame/CMakeFiles/test_game.dir/build.make testgame/CMakeFiles/test_game.dir/build
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f testgame/CMakeFiles/test_game.dir/build.make testgame/CMakeFiles/test_game.dir/build
 .PHONY : test_game/fast
 
 # target to build an object file
 Main.o:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f testgame/CMakeFiles/test_game.dir/build.make testgame/CMakeFiles/test_game.dir/Main.o
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f testgame/CMakeFiles/test_game.dir/build.make testgame/CMakeFiles/test_game.dir/Main.o
 .PHONY : Main.o
 
 # target to preprocess a source file
 Main.i:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f testgame/CMakeFiles/test_game.dir/build.make testgame/CMakeFiles/test_game.dir/Main.i
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f testgame/CMakeFiles/test_game.dir/build.make testgame/CMakeFiles/test_game.dir/Main.i
 .PHONY : Main.i
 
 # target to generate assembly for a file
 Main.s:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(MAKE) -f testgame/CMakeFiles/test_game.dir/build.make testgame/CMakeFiles/test_game.dir/Main.s
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(MAKE) -f testgame/CMakeFiles/test_game.dir/build.make testgame/CMakeFiles/test_game.dir/Main.s
 .PHONY : Main.s
 
 # Help Target
@@ -153,6 +153,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yangdongfeng/documents/cpp/char_game_engine/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edolphin/documents/cpp/char_game_engine/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
