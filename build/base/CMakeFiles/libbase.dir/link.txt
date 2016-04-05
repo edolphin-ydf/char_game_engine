@@ -1,2 +1,0 @@
-/usr/bin/ar cq ../lib/libbase.a  CMakeFiles/libbase.dir/ArcObject.o CMakeFiles/libbase.dir/AutoReleasePool.o CMakeFiles/libbase.dir/AutoReleasePoolManager.o
-/usr/bin/ranlib ../lib/libbase.a

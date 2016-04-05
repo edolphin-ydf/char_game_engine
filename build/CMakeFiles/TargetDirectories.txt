@@ -1,3 +1,0 @@
-/home/edolphin/documents/cpp/char_game_engine/build/engine/CMakeFiles/libengine.dir
-/home/edolphin/documents/cpp/char_game_engine/build/base/CMakeFiles/libbase.dir
-/home/edolphin/documents/cpp/char_game_engine/build/testgame/CMakeFiles/test_game.dir

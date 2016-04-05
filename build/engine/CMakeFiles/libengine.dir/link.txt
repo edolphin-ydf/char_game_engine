@@ -1,2 +1,0 @@
-/usr/bin/ar cq ../lib/libengine.a  CMakeFiles/libengine.dir/Game.o CMakeFiles/libengine.dir/FPoint2D.o CMakeFiles/libengine.dir/GameObject.o CMakeFiles/libengine.dir/PicLoader.o CMakeFiles/libengine.dir/PixelPoint.o CMakeFiles/libengine.dir/Point2D.o
-/usr/bin/ranlib ../lib/libengine.a

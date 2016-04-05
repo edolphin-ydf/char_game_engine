@@ -1,2 +1,0 @@
-/usr/bin/ar cq ../lib/libedpcge.a  CMakeFiles/libedpcge.dir/Game.o
-/usr/bin/ranlib ../lib/libedpcge.a
