@@ -19,3 +19,4 @@ add_subdirectory(engine)
 
 add_subdirectory(testgame)
 
+add_subdirectory(test)
