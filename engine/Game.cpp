@@ -4,8 +4,10 @@
 
 namespace edolphin {
 
-void Game::init() {
-	painter->init();
+bool Game::init() {
+	if (!painter->init())
+		return false;
+	return true;
 }
 
 void Game::destory() {

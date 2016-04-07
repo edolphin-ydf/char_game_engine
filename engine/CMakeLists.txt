@@ -7,8 +7,11 @@ set(LIB_SRC
 	FPoint2D.cpp
 	GameObject.cpp
 	PicLoader.cpp
-	PixelPoint.cpp
 	Point2D.cpp
+	Color.cpp
+	Line.cpp
+	ObjectContainer.cpp
+	Scene.cpp
 	)
 
 add_library(libengine ${LIB_SRC})

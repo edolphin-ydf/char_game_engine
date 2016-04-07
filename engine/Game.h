@@ -2,12 +2,13 @@
 #define _GAME_H_ 
 
 #include "PainterDelegate.h"
+#include "Singleton.h"
 
 namespace edolphin {
 
-class Game {
+class Game : public Singleton<Game> {
 public:
-	void init();
+	bool init();
 	void destory();
 
 	void main();
@@ -17,6 +18,9 @@ private:
 
 
 private:
+	Game();
+	~Game();
+
 	volatile bool finished = false;
 
 	bool showColor = false;

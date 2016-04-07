@@ -3,6 +3,9 @@
 
 
 #include "Point2D.h"
+#include "Color.h"
+
+#include <string>
 
 namespace edolphin {
 
@@ -12,15 +15,23 @@ public:
 	PainterDelegate ();
 	virtual ~PainterDelegate ();
 
-	virtual void init() = 0;
+	virtual bool init() = 0;
 	virtual void destory() = 0;
 	virtual void refresh() = 0;
 
 	virtual void drawPoint(Point2D point) = 0;
 	virtual void drawLine(Point2D begin, Point2D end) = 0;
-	virtual void drawRectangle() = 0;
-	virtual void drawCircles() = 0;
-	virtual void drawPicture(char *data) = 0;
+	virtual void drawRectangle(Point2D p1, Point2D p2) = 0;
+	virtual void drawCircles(Point2D point, int r) = 0;
+	virtual void drawText(Point2D point, std::string text) = 0;
+	virtual void drawPicture(int width, int height, char *data) = 0;
+
+	virtual Color getBackgroundColor() = 0;
+	virtual Color getForegroundColor() = 0;
+
+	virtual void setColorPair(Color foreground, Color background) = 0;
+	virtual void setBackgroundColor(Color background) = 0;
+	virtual void setForegroundColor(Color foreground) = 0;
 };
 
 }

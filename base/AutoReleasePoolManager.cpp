@@ -4,19 +4,6 @@
 
 namespace edolphin {
 
-AutoReleasePoolManager* AutoReleasePoolManager::poolManager = new AutoReleasePoolManager();
-
-AutoReleasePoolManager* AutoReleasePoolManager::getInstance() {
-	if (poolManager == nullptr) {
-		poolManager = new AutoReleasePoolManager();
-	}
-	return poolManager;
-}
-
-void AutoReleasePoolManager::deleteInstance() {
-	SafeDelete(poolManager);
-}
-
 AutoReleasePool* AutoReleasePoolManager::getCurrentPool() {
 	return poolQueue.front();
 }
@@ -30,10 +17,6 @@ void AutoReleasePoolManager::pop() {
 	pool->release();
 	poolQueue.pop();
 	delete pool;
-}
-
-AutoReleasePoolManager::AutoReleasePoolManager () {
-
 }
 
 AutoReleasePoolManager::~AutoReleasePoolManager () {

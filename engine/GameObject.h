@@ -2,10 +2,11 @@
 #define GAMEOBJECT_H_QMWBXJZZ
 
 #include "ArcObject.h"
+#include "Drawable.h"
 
 namespace edolphin {
 
-class GameObject : public ArcObject
+class GameObject : public ArcObject, public Drawable
 {
 public:
 	GameObject ();
