@@ -1,6 +1,7 @@
 -x
 c++
--I/home/edolphin/documents/cpp/char_game_engine/base
--I/home/edolphin/documents/cpp/char_game_engine/engine
+-I/home/yangdongfeng/documents/cpp/char_game_engine/base
+-I/home/yangdongfeng/documents/cpp/char_game_engine/engine
+-I/home/yangdongfeng/documents/cpp/char_game_engine/etest
 -Wall
 -std=c++11

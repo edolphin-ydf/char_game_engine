@@ -4,7 +4,7 @@
 #include <map>
 #include <list>
 #include <functional>
-#include "GetterSetter.h"
+#include <string>
 #include "ETestClass.h"
 
 class TestCaseManager
@@ -24,7 +24,11 @@ public:
 
 	void foreach(std::function<void(ETestClass*)> callback);
 
-	edolphin::Getter<TestMap> getTests = edolphin::Getter<TestMap>(tests);
+	TestMap getTests() {return tests;}
+
+public:
+	std::string errMsg = "";
+	bool hasError = false;
 
 private:
 	TestCaseManager () {};

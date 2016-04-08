@@ -21,3 +21,4 @@ set_target_properties(libengine PROPERTIES OUTPUT_NAME "engine")
 message(STATUS ${PROJECT_SOURCE_DIR})
 
 
+add_subdirectory(test)

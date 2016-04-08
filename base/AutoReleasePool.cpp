@@ -13,6 +13,7 @@ void AutoReleasePool::release() {
 
 void AutoReleasePool::autoRelease(ArcObject *arcObject) {
 	if (arcObject != NULL) {
+		arcObject->retain();
 		pool.push_back(arcObject);
 	}
 }

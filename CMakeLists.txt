@@ -13,10 +13,12 @@ else()
 	message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
 endif()
 
+set(ALL_EXECUTEABLE_BIN_COMPILE_FLAGS "-Wall -pedantic -g")
+
 add_subdirectory(base)
 
 add_subdirectory(engine)
 
 add_subdirectory(testgame)
 
-add_subdirectory(test)
+add_subdirectory(etest)

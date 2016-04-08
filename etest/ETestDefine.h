@@ -4,6 +4,7 @@
 #include "ETest.h"
 #include "ETestClass.h"
 #include "TestCaseManager.h"
+#include "Assert.h"
 
 #define TEST_CLASS_NAME(testGroup, testName) testGroup##testName##Class
 #define TEST_CLASS_REGISTER_CLASS_NAME(testGroup, testName) testGroup##testName##ClassRegister
@@ -12,7 +13,15 @@
 class TEST_CLASS_NAME(testGroup, testName) : public ETestClass {	\
 public:	\
 	virtual void run();	\
+	virtual std::string getTestName();	\
+	virtual std::string getGroupName();	\
 };	\
+std::string TEST_CLASS_NAME(testGroup, testName)::getTestName() {	\
+	return #testName;\
+}	\
+std::string TEST_CLASS_NAME(testGroup, testName)::getGroupName() {	\
+	return #testGroup;			\
+}		\
 class TEST_CLASS_REGISTER_CLASS_NAME(testGroup, testName) {	\
 public:	\
 	TEST_CLASS_REGISTER_CLASS_NAME(testGroup, testName)() {	\

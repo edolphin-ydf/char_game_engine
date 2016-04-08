@@ -9,7 +9,7 @@ class ArcObject;
 class AutoReleasePool
 {
 public:
-	AutoReleasePool (void);
+	AutoReleasePool () {};
 	virtual ~AutoReleasePool ();
 
 	void release();

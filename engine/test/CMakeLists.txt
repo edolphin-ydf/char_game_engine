@@ -5,17 +5,15 @@ link_directories(${PROJECT_BINARY_DIR}/lib)
 
 set(SOURCE_SRC
 	Main.cpp
-	ETest.cpp
-	ETestClass.cpp
-	TestCaseManager.cpp
 	)
 
-set(EXCUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
-add_executable(test ${SOURCE_SRC})
-target_link_libraries(test libbase)
-target_link_libraries(test libengine)
-set_target_properties(test PROPERTIES COMPILE_FLAGS "-Wall -pedantic -g")
+add_executable(test_engine ${SOURCE_SRC})
+target_link_libraries(test_engine libbase)
+target_link_libraries(test_engine libengine)
+#set_target_properties(test_engine PROPERTIES COMPILE_FLAGS ALL_EXECUTEABLE_BIN_COMPILE_FLAGS)
+set_target_properties(test_engine PROPERTIES COMPILE_FLAGS  "-Wall -pedantic -g")
 
 #GET_TARGET_PROPERTY(CF test_game COMPILE_FLAGS)
 #message(STATUS "--------------------------------------")

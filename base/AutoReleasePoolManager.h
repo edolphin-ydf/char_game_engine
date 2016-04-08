@@ -15,7 +15,9 @@ public:
 	void push(AutoReleasePool* pool);
 	void pop();
 
+friend class Singleton;
 private:
+	AutoReleasePoolManager() {}
 	virtual ~AutoReleasePoolManager ();
 
 private:

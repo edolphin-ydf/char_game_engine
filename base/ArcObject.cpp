@@ -1,7 +1,3 @@
-
-
-
-
 #include "ArcObject.h"
 #include "AutoReleasePoolManager.h"
 #include "AutoReleasePool.h"

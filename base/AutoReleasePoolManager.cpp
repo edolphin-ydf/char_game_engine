@@ -5,6 +5,10 @@
 namespace edolphin {
 
 AutoReleasePool* AutoReleasePoolManager::getCurrentPool() {
+	if (poolQueue.empty()) {
+		AutoReleasePool *pool = new AutoReleasePool();
+		poolQueue.push(pool);
+	}
 	return poolQueue.front();
 }
 

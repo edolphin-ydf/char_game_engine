@@ -1,4 +1,9 @@
 #include "TestCaseManager.h"
+#include "AssertException.h"
+
+#define RED "\033[1;31;40m"
+#define GREEN "\033[1;32;40m"
+#define DEFAULT "\033[0m"
 
 TestCaseManager* TestCaseManager::inst = nullptr;
 
@@ -29,7 +34,15 @@ void TestCaseManager::regist(std::string group, ETestClass* test) {
 }
 
 void TestCaseManager::run() {
-	foreach([](ETestClass* test) {test->run();});
+	foreach([this](ETestClass* test) {
+		hasError = false;
+		test->run();
+		if (!hasError) {
+			printf(GREEN "[PASS]" DEFAULT " %s %s\n", test->getGroupName().c_str(), test->getTestName().c_str());
+		} else {
+			printf(RED "[FAIL]" DEFAULT " %s %s %s\n", test->getGroupName().c_str(), test->getTestName().c_str(), errMsg.c_str());
+		}
+	});
 }
 
 void TestCaseManager::foreach(std::function<void(ETestClass*)> callback) {

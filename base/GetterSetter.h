@@ -35,7 +35,7 @@ template<class T>
 class SetterGetter {
 public:
 	SetterGetter(T& _val)
-		:setter(_val), getter(_val){}
+		:getter(_val), setter(_val){}
 
 	void operator() (T& _val) {
 		setter(_val);

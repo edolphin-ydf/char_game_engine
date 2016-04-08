@@ -9,7 +9,7 @@ class Singleton
 public:
 	static T* getInstance() {
 		if (inst == nullptr) {
-			inst = new T;
+			inst = new T();
 		}
 		return inst;
 	}
@@ -19,13 +19,15 @@ public:
 	}
 
 protected:
-	Singleton ();
-	virtual ~Singleton ();
+	Singleton (){};
+	virtual ~Singleton (){};
 
 	/* data */
-	static T* inst;
+	static T *inst;
 };
 
+template<class T>
+T* Singleton<T>::inst = nullptr;
 }
 
 #endif /* end of include guard: SINGLETON_H_KIPD0ZR1 */
