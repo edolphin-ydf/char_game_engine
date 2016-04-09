@@ -10,7 +10,7 @@ public:
 		:x(_x), y(_y)
 	{}
 
-	virtual ~FPoint2D ();
+	virtual ~FPoint2D (){};
 
 private:
 	/* data */

@@ -11,10 +11,19 @@ public:
 		:_x(ax), _y(ay)
 	{}
 
-	virtual ~Point2D ();
+	virtual ~Point2D (){};
 
 	SetterGetter<int> x = SetterGetter<int>(_x);
 	SetterGetter<int> y = SetterGetter<int>(_y);
+
+	Point2D operator - (Point2D b) {
+		return Point2D(_x - b._x, _y - b._y);
+	}
+	
+	Point2D operator + (Point2D b) {
+		return Point2D(_x + b._x, _y + b._y);
+	}
+
 
 private:
 	/* data */

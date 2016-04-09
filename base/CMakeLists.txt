@@ -3,6 +3,7 @@ set(LIB_SRC
 	ArcObject.cpp
 	AutoReleasePool.cpp
 	AutoReleasePoolManager.cpp
+	ObjectContainer.cpp
 	)
 
 add_library(libbase ${LIB_SRC})

@@ -12,8 +12,8 @@ namespace edolphin {
 class PainterDelegate
 {
 public:
-	PainterDelegate ();
-	virtual ~PainterDelegate ();
+	PainterDelegate () {};
+	virtual ~PainterDelegate () {};
 
 	virtual bool init() = 0;
 	virtual void destory() = 0;

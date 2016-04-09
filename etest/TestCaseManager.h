@@ -29,6 +29,7 @@ public:
 public:
 	std::string errMsg = "";
 	bool hasError = false;
+	bool showResult = true;
 
 private:
 	TestCaseManager () {};

@@ -1,6 +1,7 @@
 #include "PainterCursor.h"
 
 #include <curses.h>
+#include <math.h> 
 
 namespace edolphin {
 
@@ -31,15 +32,30 @@ void PainterCursor::refresh() {
 }
 
 void PainterCursor::drawPoint(Point2D point) {
+	drawPoint(point.x(), point.y());
+}
 
+void PainterCursor::drawPoint(int x, int y) {
+	mvaddch(y, x, '*');
 }
 
 void PainterCursor::drawLine(Point2D begin, Point2D end) {
-
+	Point2D tmp = end - begin;	
+	double k = (double)tmp.y() / (double)tmp.x();
+	for (int i=0; i<= tmp.x(); ++i) {
+		int y = round(k * i) + begin.y();
+		int x = i + begin.x();
+		drawPoint(x, y);
+	}
 }
 
 void PainterCursor::drawRectangle(Point2D p1, Point2D p2) {
-
+	int width = p2.x() - p1.x();
+	int height = p2.y() - p1.y();
+	mvvline(p1.y(), p1.x(), '|', height);
+	mvvline(p1.y(), p2.x(), '|', height);
+	mvhline(p1.y(), p1.x(), '-', width);
+	mvhline(p2.y(), p1.x(), '-', width);
 }
 
 void PainterCursor::drawCircles(Point2D point, int r) {
@@ -47,7 +63,7 @@ void PainterCursor::drawCircles(Point2D point, int r) {
 }
 
 void PainterCursor::drawText(Point2D point, std::string text) {
-
+	mvprintw(point.y(), point.x(), text.c_str());
 }
 
 void PainterCursor::drawPicture(int width, int height, char *data) {

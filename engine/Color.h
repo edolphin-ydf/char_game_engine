@@ -9,7 +9,7 @@ class Color
 {
 public:
 	Color (int _ar, int _ag, int _ab);
-	virtual ~Color ();
+	virtual ~Color () {};
 
 	SetterGetter<int> r = SetterGetter<int>(_r);
 	SetterGetter<int> g = SetterGetter<int>(_g);

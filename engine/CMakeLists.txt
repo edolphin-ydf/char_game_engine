@@ -10,11 +10,12 @@ set(LIB_SRC
 	Point2D.cpp
 	Color.cpp
 	Line.cpp
-	ObjectContainer.cpp
 	Scene.cpp
+	PainterCursor.cpp
 	)
 
 add_library(libengine ${LIB_SRC})
+target_link_libraries(libengine curses)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 set_target_properties(libengine PROPERTIES OUTPUT_NAME "engine")
 

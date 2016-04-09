@@ -37,9 +37,9 @@ void TestCaseManager::run() {
 	foreach([this](ETestClass* test) {
 		hasError = false;
 		test->run();
-		if (!hasError) {
+		if (!hasError && showResult) {
 			printf(GREEN "[PASS]" DEFAULT " %s %s\n", test->getGroupName().c_str(), test->getTestName().c_str());
-		} else {
+		} else if (hasError){
 			printf(RED "[FAIL]" DEFAULT " %s %s %s\n", test->getGroupName().c_str(), test->getTestName().c_str(), errMsg.c_str());
 		}
 	});

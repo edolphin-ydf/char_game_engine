@@ -15,6 +15,7 @@ public:
 	virtual void refresh();
 
 	virtual void drawPoint(Point2D point);
+	virtual void drawPoint(int x, int y);
 	virtual void drawLine(Point2D begin, Point2D end);
 	virtual void drawRectangle(Point2D p1, Point2D p2);
 	virtual void drawCircles(Point2D point, int r);
