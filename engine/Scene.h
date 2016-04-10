@@ -6,11 +6,11 @@
 
 namespace edolphin {
 
-class Scene : public ObjectContainer<Drawable>, public Drawable
+class Scene : public ObjectContainer<Drawable>
 {
 public:
-	Scene ();
-	virtual ~Scene ();
+	Scene () {};
+	virtual ~Scene () {};
 
 	virtual void draw();
 private:

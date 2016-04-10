@@ -6,8 +6,6 @@ namespace edolphin {
 class PicLoader {
 public:
 
-private:
-	char** data;
 };
 
 }	// edolphin

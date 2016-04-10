@@ -4,33 +4,23 @@
 #include <memory>
 
 #include "ArcObject.h"
+#include "Game.h"
+#include "Scene.h"
+#include "Line.h"
 
 using namespace edolphin;
 using namespace std;
 
-struct Test {
-	int a;
-};
-
-struct Free {
-	void operator() (void * data) {
-		printf("%s\n", "in Free()");
-		memset(data, 0, sizeof(Test));
-		free(data);
-	}
-};
-
-Test* test() {
-	Test*obj = new Test;
-	obj->a = 123;
-	std::unique_ptr<Test, Free> ptr = std::unique_ptr<Test, Free>(obj);
-	return obj;	
+void initScene() {
+	Scene* scene = Game::getInstance()->getScene();
+	Line* line = new Line(10, 10, 30, 20);
+	scene->addObject(line);
+	line->autoRelease();
 }
 
 int main(int argc, char *argv[])
 {
-	Test *obj1 = test();
-	obj1->a = 2;
-	printf("%d\n", obj1->a);
+	initScene();
+	Game::getInstance()->main();
 	return 0;
 }

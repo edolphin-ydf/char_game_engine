@@ -7,12 +7,18 @@
 #include <string>
 #include "ETestClass.h"
 
+#define BEFORE_TEST_CLASS_NAME "beforeClass"
+#define AFTER_TEST_CLASS_NAME "afterClass"
+
 class TestCaseManager
 {
 	typedef std::list<ETestClass*> TestGroup;
 	typedef TestGroup::iterator TestGroup_IT;
 	typedef std::map<std::string, TestGroup > TestMap;
 	typedef TestMap::iterator TestMap_IT;
+
+	typedef std::map<std::string, ETestClass*> SingleTestMap;
+	typedef SingleTestMap::iterator SingleTestMap_IT;
 
 public:
 	static TestCaseManager& getInstance();
@@ -23,6 +29,9 @@ public:
 	void run();
 
 	void foreach(std::function<void(ETestClass*)> callback);
+	void foreach(std::function<void(ETestClass*)> before, 
+		std::function<void(ETestClass*)> callback, 
+		std::function<void(ETestClass*)> after);
 
 	TestMap getTests() {return tests;}
 
@@ -39,6 +48,8 @@ private:
 	/* data */
 
 	TestMap tests;
+	SingleTestMap beforeTest;
+	SingleTestMap afterTest;
 
 	static TestCaseManager *inst;
 };

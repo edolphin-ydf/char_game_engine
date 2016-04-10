@@ -41,6 +41,5 @@ std::string ArcObject::toString() {
 	return oss.str();
 }
 
-
 }	// namespace edolphin
 

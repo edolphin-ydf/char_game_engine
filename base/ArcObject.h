@@ -98,6 +98,11 @@ public:
 
 	Getter<int> getRetainCount = Getter<int>(retainCount);
 	Setter<int> setRetainCount = Setter<int>(retainCount);
+
+	template<class T>
+	static T* createObject() {
+		return new T();
+	}
 };
 
 }	// end of namespace edolphin

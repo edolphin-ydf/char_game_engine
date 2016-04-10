@@ -7,7 +7,6 @@
 int main(int argc, char *argv[])
 {
 	ETest test;
-	TestCaseManager::getInstance().showResult = false;
 	test.run();
 	return 0;
 }

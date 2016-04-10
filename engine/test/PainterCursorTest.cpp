@@ -1,29 +1,21 @@
 #include "ETestDefine.h"
 #include "PainterCursor.h"
+#include "BaseType.h"
 #include <unistd.h>
 
 using namespace edolphin;
 PainterCursor *painterCursor = new PainterCursor();
-void before() {
-	if(painterCursor->init())
-		printf("init painterCursor success\n");
+
+TEST(painterCursor, beforeClass) {
+	TestCaseManager::getInstance().showResult = false;
+	painterCursor->init();
 }
 
-void after() {
+TEST(painterCursor, afterClass) {
 	sleep(1);
 	painterCursor->destory();
+	TestCaseManager::getInstance().showResult = true;
 }
-
-class RegistClass {
-public:
-	RegistClass() {
-		before();
-	}
-	~RegistClass() {
-		after();
-	}
-};
-RegistClass registClass;
 
 TEST(painterCursor, point) {
 	painterCursor->drawPoint(3, 50);

@@ -2,7 +2,7 @@
 #define PAINTERDELEGATE_H_2ZTOIORH
 
 
-#include "Point2D.h"
+#include "BaseType.h"
 #include "Color.h"
 
 #include <string>

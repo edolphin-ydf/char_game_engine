@@ -1,15 +1,21 @@
 #ifndef DRAWABLE_H_O14IJINU
 #define DRAWABLE_H_O14IJINU
 
+#include "ArcObject.h"
+#include "BaseType.h"
+
 namespace edolphin {
 
-class Drawable
+class Drawable : public ArcObject
 {
 public:
-	Drawable ();
-	virtual ~Drawable ();
+	Drawable () {};
+	virtual ~Drawable () {};
 
 	virtual void draw() = 0;
+
+protected:
+	Point2D position = Point2D(0, 0);
 };
 
 }
