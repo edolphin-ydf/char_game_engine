@@ -4,6 +4,7 @@
 
 #include "BaseType.h"
 #include "Color.h"
+#include "Picture.h"
 
 #include <string>
 
@@ -24,7 +25,8 @@ public:
 	virtual void drawRectangle(Point2D p1, Point2D p2) = 0;
 	virtual void drawCircles(Point2D point, int r) = 0;
 	virtual void drawText(Point2D point, std::string text) = 0;
-	virtual void drawPicture(int width, int height, char *data) = 0;
+	virtual void drawPicture(Point2D position, int width, int height, BYTE *data) = 0;
+	virtual void drawPicture(Picture *picture) = 0;
 
 	virtual Color getBackgroundColor() = 0;
 	virtual Color getForegroundColor() = 0;

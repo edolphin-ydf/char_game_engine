@@ -3,6 +3,7 @@
 
 #include "ArcObject.h"
 #include "BaseType.h"
+#include "GetterSetter.h"
 
 namespace edolphin {
 
@@ -14,8 +15,9 @@ public:
 
 	virtual void draw() = 0;
 
+	SetterGetter<Point2D> position = SetterGetter<Point2D>(_position);	
 protected:
-	Point2D position = Point2D(0, 0);
+	Point2D _position = Point2D(0, 0);
 };
 
 }

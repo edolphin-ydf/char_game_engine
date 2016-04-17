@@ -5,7 +5,7 @@
 namespace edolphin {
 
 void DPoint::draw() {
-	Game::getInstance()->getPainter()->drawPoint(point + position);
+	Game::getInstance()->getPainter()->drawPoint(point + _position);
 }
 
 }

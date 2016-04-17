@@ -66,10 +66,13 @@ void PainterCursor::drawText(Point2D point, std::string text) {
 	mvprintw(point.y, point.x, text.c_str());
 }
 
-void PainterCursor::drawPicture(int width, int height, char *data) {
+void PainterCursor::drawPicture(Point2D position, int width, int height, BYTE *data) {
 
 }
 
+void PainterCursor::drawPicture(Picture *picture) {
+	drawPicture(picture->position(), picture->width(), picture->height(), picture->data());
+}
 
 Color PainterCursor::getBackgroundColor() {
 	return _backgroundColor;	

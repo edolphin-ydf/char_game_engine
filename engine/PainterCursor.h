@@ -20,7 +20,8 @@ public:
 	virtual void drawRectangle(Point2D p1, Point2D p2);
 	virtual void drawCircles(Point2D point, int r);
 	virtual void drawText(Point2D point, std::string text);
-	virtual void drawPicture(int width, int height, char *data);
+	virtual void drawPicture(Point2D position, int width, int height, BYTE *data);
+	virtual void drawPicture(Picture *picture);
 
 	virtual Color getBackgroundColor();
 	virtual Color getForegroundColor();
