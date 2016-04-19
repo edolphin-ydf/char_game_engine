@@ -2,10 +2,6 @@
 
 #include "ETestDefine.h"
 
-TEST(testGroup, test) {
-	printf("in test\n");
-}
-
 int main(int argc, char *argv[])
 {
 	ETest test;

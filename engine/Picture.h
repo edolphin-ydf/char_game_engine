@@ -16,15 +16,29 @@ public:
 
 	virtual void draw();
 
-	SetterGetter<DWORD> width = SetterGetter<DWORD>(_width);
-	SetterGetter<DWORD> height = SetterGetter<DWORD>(_height);
-	SetterGetter<BYTE*> data = SetterGetter<BYTE*>(_data);
+	GeterAssign(BYTE*, data, Data);
 
+	void setData(BYTE* data) {
+		SafeDeleteS(data);
+		this->data = data;
+	}
+
+	SeterGeterAssign(DWORD, width, Width);
+	SeterGeterAssign(DWORD, height, Height);
+	
 private:
 	/* data */
-	BYTE* _data = nullptr;	
-	DWORD _width = 0;
-	DWORD _height = 0;
+	BYTE* data = nullptr;	
+	DWORD width = 0;
+	DWORD height = 0;
+};
+
+class Test : public Drawable {
+public:
+	Test() {}
+	~Test() {}
+
+	void draw() {}
 };
 
 }	// ns edolphin

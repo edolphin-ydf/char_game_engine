@@ -3,9 +3,12 @@
 
 namespace edolphin {
 
+class Picture;
 class PicLoader {
 public:
-
+	PicLoader(){}
+	~PicLoader() {}
+	static Picture* load(const char* filename);
 };
 
 }	// edolphin

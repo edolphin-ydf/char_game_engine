@@ -6,9 +6,8 @@ set(LIB_SRC
 	Game.cpp
 	GameObject.cpp
 	PicLoader.cpp
-	DPoint.cpp
+	Picture.cpp
 	Color.cpp
-	Line.cpp
 	Scene.cpp
 	PainterCursor.cpp
 	)

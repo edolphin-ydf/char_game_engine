@@ -2,6 +2,7 @@
 
 #include <curses.h>
 #include <math.h> 
+#include <stdio.h>
 
 namespace edolphin {
 
@@ -67,11 +68,13 @@ void PainterCursor::drawText(Point2D point, std::string text) {
 }
 
 void PainterCursor::drawPicture(Point2D position, int width, int height, BYTE *data) {
-
+	for (int i = 0; i < height; ++i) {
+		mvprintw(position.y + i, position.x, (char*)(data + width * i));
+	}
 }
 
 void PainterCursor::drawPicture(Picture *picture) {
-	drawPicture(picture->position(), picture->width(), picture->height(), picture->data());
+	drawPicture(picture->position(), picture->getWidth(), picture->getHeight(), picture->getData());
 }
 
 Color PainterCursor::getBackgroundColor() {

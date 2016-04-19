@@ -17,9 +17,10 @@ public:
 	virtual void drawPoint(Point2D point);
 	virtual void drawPoint(int x, int y);
 	virtual void drawLine(Point2D begin, Point2D end);
-	virtual void drawRectangle(Point2D p1, Point2D p2);
-	virtual void drawCircles(Point2D point, int r);
-	virtual void drawText(Point2D point, std::string text);
+	virtual void drawRectangle(Point2D leftUp, Point2D rightDown);
+	virtual void drawCircles(Point2D center, int r);
+
+	virtual void drawText(Point2D position, std::string text);
 	virtual void drawPicture(Point2D position, int width, int height, BYTE *data);
 	virtual void drawPicture(Picture *picture);
 
