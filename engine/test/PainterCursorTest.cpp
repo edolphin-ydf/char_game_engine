@@ -25,37 +25,40 @@ TEST(painterCursor, point) {
 	sleep(1);
 }
 
-TEST(painterCursor, line) {
-	painterCursor->drawLine(Point2D(4, 4), Point2D(8, 8));
-	painterCursor->refresh();
-	sleep(1);
-	painterCursor->drawLine(Point2D(14, 14), Point2D(25, 30));
-	painterCursor->refresh();
-	sleep(1);
-}
+//TEST(painterCursor, line) {
+	//painterCursor->drawLine(Point2D(4, 4), Point2D(8, 8));
+	//painterCursor->refresh();
+	//sleep(1);
+	//painterCursor->drawLine(Point2D(14, 14), Point2D(25, 30));
+	//painterCursor->refresh();
+	//sleep(1);
+//}
 
-TEST(painterCursor, rectangle) {
-	painterCursor->drawRectangle(Point2D(4, 4), Point2D(8, 8));
-	painterCursor->refresh();
-	sleep(5);
-	painterCursor->drawRectangle(Point2D(8, 8), Point2D(9, 10));
-	painterCursor->refresh();
-	sleep(5);
-}
+//TEST(painterCursor, rectangle) {
+	//painterCursor->drawRectangle(Point2D(4, 4), Point2D(8, 8));
+	//painterCursor->refresh();
+	//sleep(5);
+	//painterCursor->drawRectangle(Point2D(8, 8), Point2D(9, 10));
+	//painterCursor->refresh();
+	//sleep(5);
+//}
 
-TEST(painterCursor, text) {
-	painterCursor->drawText(Point2D(10, 50), "the test text");
-	painterCursor->refresh();
-}
+//TEST(painterCursor, text) {
+	//painterCursor->drawText(Point2D(10, 50), "the test text");
+	//painterCursor->refresh();
+//}
 
 TEST(painterCursor, picture) {
-	Picture* pic = PicLoader::load("/home/yangdongfeng/documents/cpp/char_game_engine/engine/test/test_pic.pic");
-	Point2D pos(50, 30);
-	pic->position(pos);
-	painterCursor->drawPicture(pic);
-	painterCursor->refresh();
-	sleep(5);
-	pic->release();
+	//Picture* pic = PicLoader::load("~/documents/cpp/char_game_engine/engine/test/test_pic.pic");
+	Picture* pic = PicLoader::load("/home/edolphin/documents/cpp/char_game_engine/engine/test/test_pic.pic");
+	Assert::assertNotNull(pic);
+	if (pic != nullptr) {
+		Point2D pos(50, 30);
+		painterCursor->drawPicture(pos, pic);
+		painterCursor->refresh();
+		sleep(5);
+		pic->release();
+	}
 }
 
 

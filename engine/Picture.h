@@ -2,19 +2,17 @@
 #define PICTURE_H_YV56DUXM
 
 #include "BaseType.h"
+#include "ArcObject.h"
 #include "GetterSetter.h"
-#include "Drawable.h"
 
 namespace edolphin {
 
-class Picture : public Drawable
+class Picture : public ArcObject
 {
 public:
 	Picture ();
 	Picture(BYTE* data, DWORD width, DWORD height);
 	virtual ~Picture ();
-
-	virtual void draw();
 
 	GeterAssign(BYTE*, data, Data);
 
@@ -33,13 +31,6 @@ private:
 	DWORD height = 0;
 };
 
-class Test : public Drawable {
-public:
-	Test() {}
-	~Test() {}
-
-	void draw() {}
-};
 
 }	// ns edolphin
 

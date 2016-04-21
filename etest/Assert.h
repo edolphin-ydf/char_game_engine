@@ -24,6 +24,14 @@ public:
 			assertFail("value v1 == value v2");
 		}
 	}
+
+	template<class T>
+	static void assertNotNull(T v) {
+		if (v == nullptr) {
+			assertFail("value is null");
+		}
+	}
+
 private:
 	/* data */
 };

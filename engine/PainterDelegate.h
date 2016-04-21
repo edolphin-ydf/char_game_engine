@@ -28,7 +28,7 @@ public:
 
 	virtual void drawText(Point2D position, std::string text) = 0;
 	virtual void drawPicture(Point2D position, int width, int height, BYTE *data) = 0;
-	virtual void drawPicture(Picture *picture) = 0;
+	virtual void drawPicture(Point2D position, Picture *picture) = 0;
 
 	virtual Color getBackgroundColor() = 0;
 	virtual Color getForegroundColor() = 0;

@@ -10,6 +10,8 @@ set(LIB_SRC
 	Color.cpp
 	Scene.cpp
 	PainterCursor.cpp
+	Timer.cpp
+	TimerManager.cpp
 	)
 
 add_library(libengine ${LIB_SRC})

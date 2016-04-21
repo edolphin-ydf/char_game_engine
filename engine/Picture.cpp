@@ -18,10 +18,4 @@ Picture::~Picture () {
 	SafeDeleteS(data);
 }
 
-void Picture::draw() {
-	Game::getInstance()->getPainter()->drawPicture(this);
-}
-
-
-
 }

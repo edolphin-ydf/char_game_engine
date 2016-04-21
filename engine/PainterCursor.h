@@ -22,7 +22,7 @@ public:
 
 	virtual void drawText(Point2D position, std::string text);
 	virtual void drawPicture(Point2D position, int width, int height, BYTE *data);
-	virtual void drawPicture(Picture *picture);
+	virtual void drawPicture(Point2D position, Picture *picture);
 
 	virtual Color getBackgroundColor();
 	virtual Color getForegroundColor();

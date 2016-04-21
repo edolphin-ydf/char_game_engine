@@ -73,8 +73,8 @@ void PainterCursor::drawPicture(Point2D position, int width, int height, BYTE *d
 	}
 }
 
-void PainterCursor::drawPicture(Picture *picture) {
-	drawPicture(picture->position(), picture->getWidth(), picture->getHeight(), picture->getData());
+void PainterCursor::drawPicture(Point2D position, Picture *picture) {
+	drawPicture(position, picture->getWidth(), picture->getHeight(), picture->getData());
 }
 
 Color PainterCursor::getBackgroundColor() {

@@ -10,6 +10,9 @@ namespace edolphin
 	
 Picture* PicLoader::load(const char* filename) {
 	FILE* file = fopen(filename, "r");
+	if (file == NULL) {
+		return nullptr;
+	}
 	std::vector<std::string> picDatas;
 	char buf[1024]  = {0};
 	DWORD width = 0;

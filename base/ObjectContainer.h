@@ -20,6 +20,7 @@ public:
 
 	void addObject(T* obj);
 	void addObjectAtIndex(T* obj, int idx);
+	void removeObject(T* ojb);
 	void removeObjectAtIndex(int idx);
 
 	void foreach(std::function<void(T*)> callback);
@@ -41,6 +42,17 @@ void ObjectContainer<T>::addObjectAtIndex(T* obj, int idx) {
 	it = it + idx;
 	_objects.insert(it, obj);
 	obj->retain();
+}
+
+template<class T>
+void ObjectContainer<T>::removeObject(T *obj) {
+	typename std::vector<T*>::iterator it = _objects.begin();
+	for (; it != _objects.end(); ++it) {
+		if (*it == obj) {
+			_objects.erase(it);
+			break;
+		}
+	}
 }
 
 template<class T>

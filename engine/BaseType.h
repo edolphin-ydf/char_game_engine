@@ -1,11 +1,15 @@
 #ifndef BASETYPE_H_2ZCARIIQ
 #define BASETYPE_H_2ZCARIIQ
 
+#include "math.h"
 
 typedef unsigned int DWORD;
 typedef unsigned long QWORD;
 typedef unsigned short WORD;
 typedef unsigned char BYTE;
+typedef unsigned long Millsecond;
+
+#define x2(x) ((x) * (x))
 
 template<class T>
 struct BasePoint2D {
@@ -20,6 +24,10 @@ struct BasePoint2D {
 	
 	BasePoint2D operator - (BasePoint2D b) {
 		return BasePoint2D(x - b.x, y - b.y);
+	}
+
+	float distance(BasePoint2D b) {
+		sqrt(x2(b.x - x) + x2(b.y - y));
 	}
 };
 

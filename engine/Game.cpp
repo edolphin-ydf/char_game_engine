@@ -3,6 +3,7 @@
 #include "AutoReleasePool.h"
 #include "Scene.h"
 #include "PainterCursor.h"
+#include "TimerManager.h"
 #include "Utils.h"
 
 #include <unistd.h>
@@ -47,6 +48,10 @@ void Game::main() {
 			count = 0;
 			lastRefreshTime = cur;
 		}
+
+		Millsecond nowMs = Utils::getMillionTimeStamp();
+		TimerManager::getInstance()->onTimer(nowMs);
+
 		_painter->drawText(Point2D(50, 50), txt);
 
 		_painter->refresh();
