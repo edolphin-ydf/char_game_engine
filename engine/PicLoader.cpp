@@ -30,6 +30,7 @@ Picture* PicLoader::load(const char* filename) {
 	char* data = new char[width * height];
 	for (int i = 0; i < picDatas.size(); ++i) {
 		strncpy(data + width * i, picDatas[i].c_str(), width);
+		*(data + width * (i + 1) -1) = 0;
 	}
 
 	return new Picture((BYTE*)data, width, height);

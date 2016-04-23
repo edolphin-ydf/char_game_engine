@@ -14,13 +14,6 @@ using namespace edolphin;
 using namespace std;
 
 void initScene() {
-	Timer *timer = new Timer(1000, true, [](Timer* timer, Millsecond now) { 
-			char txt[20] = {0};
-			snprintf(txt, sizeof(txt) -1, "now:%lu", now);
-			Game::getInstance()->getPainter()->drawText(Point2D(0, 0), txt);
-		});
-	timer->release();
-
 	TestScene* testScene = ArcObject::createObject<TestScene>();
 	Game::getInstance()->setScene(testScene);
 
