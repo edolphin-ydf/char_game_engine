@@ -15,7 +15,7 @@ public:
 	static unsigned long getMillionTimeStamp() {
 		struct timeval time;
 		gettimeofday(&time, nullptr);
-		return time.tv_sec * 1000 + time.tv_usec;
+		return time.tv_sec * 1000 + time.tv_usec/1000;
 	}
 
 	static unsigned long getTimeStamp() {

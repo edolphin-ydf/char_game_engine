@@ -4,16 +4,21 @@
 #include "Drawable.h"
 #include "GetterSetter.h"
 #include "Timer.h"
+#include "ObjectContainer.h"
+#include "ActionObserver.h"
+#include "ArcObject.h"
+#include <vector>
 
 namespace edolphin {
 
 
-class Action
+class Action : public ArcObject
 {
 public:
-	Action ();
-	virtual ~Action ();
+	Action (){};
+	virtual ~Action (){};
 
+	virtual void reset() = 0;
 	virtual void start() = 0;
 	virtual void action() = 0;
 	virtual void cancel() = 0;
@@ -27,46 +32,72 @@ protected:
 };
 
 
-class ActionMoveTo : public Action {
+//
+class ActionObserved : public Action
+{
 public:
-	ActionMoveTo(Drawable* owner, Point2D to, DWORD duration) {
-		this->_owner = owner;
-		DWORD disx = to.x - owner->position().x;
-		DWORD disy = to.y - owner->position().y;
-		DWORD fps = 60;
-		DWORD mspf = 1000 / fps;
-		DWORD fnum = duration / mspf;
-		moveTimes = fnum;
-		speedx = disx / fnum;
-		speedy = disy / fnum;
-		oripos = owner->position();
-	}
+	ActionObserved () {};
+	virtual ~ActionObserved () {};
 
-	virtual void start() {
+	SeterGeterRetain(ActionObserver, observer, Observer);
 
-	}
+protected:
+	/* data */
+	ActionObserver* observer = nullptr;
+};
 
-	virtual void action() {
-		curStep++;
-		Point2D newPos = Point2D(oripos.x + speedx * curStep, oripos.y + speedy * curStep);
-		_owner->position(newPos);
-	}
 
-	virtual void cancel() {
+//
+class ActionMoveTo : public ActionObserved {
+public:
 
-	}
+#define INTERVAL 16
+	ActionMoveTo(Drawable* owner, Point2D to, Millsecond duration);
 
-	virtual void finished() {
+	virtual ~ActionMoveTo();
 
-	}
+	virtual void reset();
+
+	virtual void start();
+
+	virtual void action();
+
+	virtual void cancel();
+
+	virtual void finished();
 
 public:
-	DWORD speedx;
-	DWORD speedy;
+	double speedx;
+	double speedy;
 	DWORD moveTimes;
 	DWORD curStep = 0;
 	Point2D oripos;
+	Point2D dist;
+	Timer* timer = nullptr;
+	Millsecond duration;
 };
+
+class ActionSequence : public ActionObserved, public ObjectContainer<ActionObserved>, public ActionObserver {
+public:
+	ActionSequence(bool repeat);
+	ActionSequence(bool repeat, std::vector<ActionObserved*> actions);
+	~ActionSequence();
+
+	ActionSequence* addAction(ActionObserved* act);
+
+	virtual void reset();
+	virtual void start();
+	virtual void action();
+	virtual void cancel();
+	virtual void finished();
+
+	virtual void onFinished(ActionObserved* action);
+
+private:
+	DWORD currentActionIdx;
+	bool repeat;
+};
+
 
 }
 

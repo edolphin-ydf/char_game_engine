@@ -5,14 +5,16 @@
 #include "PainterCursor.h"
 #include "TimerManager.h"
 #include "Utils.h"
+#include "Logger.h"
 
 #include <unistd.h>
 #include <stdio.h>
 
 namespace edolphin {
 
+Logger* Game::logger = nullptr;
+
 Game::Game() {
-	_scene = ArcObject::createObject<Scene>();
 	_painter = new PainterCursor();
 }
 
@@ -28,7 +30,7 @@ bool Game::init() {
 
 void Game::destory() {
 	_painter->destory();
-	_scene->release();
+	SafeRelease(_scene);
 	AutoReleasePoolManager::deleteInstance();
 }
 
@@ -39,6 +41,7 @@ void Game::main() {
 	unsigned long lastRefreshTime = Utils::getTimeStamp();
 	char txt[20] = {0};
 	while(!finished) {
+		_painter->clean();
 		draw();	
 		AutoReleasePoolManager::getInstance()->getCurrentPool()->release();
 
@@ -61,7 +64,17 @@ void Game::main() {
 }
 
 void Game::draw() {
-	_scene->draw();
+	if (_scene != nullptr) {
+		_scene->draw();
+	}
 }
+
+Logger* Game::getLogger() {
+	if (logger == nullptr) {
+		logger = new Logger("./Game.log");
+	}
+	return logger;
+}
+
 
 }	//edolphin

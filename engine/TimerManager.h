@@ -4,20 +4,28 @@
 #include "ObjectContainer.h"
 #include "BaseType.h"
 #include "Singleton.h"
+#include "vector"
 
 namespace edolphin
 {
 
 class Timer;
-class TimerManager : public ObjectContainer<Timer>, public Singleton<TimerManager>
+class TimerManager : protected ObjectContainer<Timer>, public Singleton<TimerManager>
 {
 public:
 
 	void onTimer(Millsecond now);
+
+	void fireTimer(Timer* timer);
+
+	void hireTimer(Timer* timer);
 private:
 	friend class Singleton;
 	TimerManager ();
 	virtual ~TimerManager ();
+
+	std::vector<Timer*> willFireTimers;
+	std::vector<Timer*> willHireTimers;
 };
 
 } /* edolphin */ 

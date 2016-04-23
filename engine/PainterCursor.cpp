@@ -28,6 +28,10 @@ void PainterCursor::destory() {
 	endwin();
 }
 
+void PainterCursor::clean() {
+	erase();
+}
+
 void PainterCursor::refresh() {
 	::refresh();
 }

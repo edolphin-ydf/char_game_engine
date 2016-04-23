@@ -27,7 +27,7 @@ struct BasePoint2D {
 	}
 
 	float distance(BasePoint2D b) {
-		sqrt(x2(b.x - x) + x2(b.y - y));
+		return sqrt(x2(b.x - x) + x2(b.y - y));
 	}
 };
 

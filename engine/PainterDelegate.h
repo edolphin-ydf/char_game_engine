@@ -18,6 +18,7 @@ public:
 
 	virtual bool init() = 0;
 	virtual void destory() = 0;
+	virtual void clean()  = 0;
 	virtual void refresh() = 0;
 
 	virtual void drawPoint(Point2D point) = 0;

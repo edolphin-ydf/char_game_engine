@@ -4,10 +4,13 @@
 #include "PainterDelegate.h"
 #include "Singleton.h"
 #include "GetterSetter.h"
+#include "ArcObject.h"
+#include "Scene.h"
 
 namespace edolphin {
 
 class Scene;
+class Logger;
 class Game : public Singleton<Game> {
 public:
 	bool init();
@@ -16,8 +19,10 @@ public:
 	void main();
 
 	Getter<PainterDelegate*> getPainter = Getter<PainterDelegate*>(_painter);
-	Getter<Scene*> getScene = Getter<Scene*>(_scene);
-	
+
+	SeterGeterRetain(Scene, _scene, Scene);
+
+	static Logger* getLogger();
 private:
 	friend class Singleton;
 	Game();
@@ -33,7 +38,9 @@ private:
 
 	PainterDelegate *_painter;
 
-	Scene *_scene;
+	Scene *_scene = nullptr;
+
+	static Logger* logger;
 };
 
 }	// edolphin

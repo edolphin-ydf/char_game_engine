@@ -12,6 +12,7 @@ public:
 
 	virtual bool init();
 	virtual void destory();
+	virtual void clean();
 	virtual void refresh();
 
 	virtual void drawPoint(Point2D point);

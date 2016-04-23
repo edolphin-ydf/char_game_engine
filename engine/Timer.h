@@ -20,6 +20,10 @@ public:
 
 	void onTimer(Millsecond now);
 
+	void pause();
+	void resume();
+	void stop();
+
 private:
 	/* data */
 	Millsecond interval = 0;

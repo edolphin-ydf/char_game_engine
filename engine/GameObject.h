@@ -1,22 +1,21 @@
 #ifndef GAMEOBJECT_H_QMWBXJZZ
 #define GAMEOBJECT_H_QMWBXJZZ
 
-#include "ArcObject.h"
 #include "Drawable.h"
 
 namespace edolphin {
 
-class GameObject : public ArcObject, public Drawable
+class Picture;
+class PicObject : public Drawable
 {
 public:
-	GameObject ();
-	virtual ~GameObject ();
+	PicObject(const char* path);
+	PicObject (Picture* picture);
+	virtual ~PicObject ();
 
-	virtual void draw() = 0;
-
+	virtual void draw();
 private:
-	/* data */
-
+	Picture* pic;
 };
 
 }

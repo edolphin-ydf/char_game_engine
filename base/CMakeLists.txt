@@ -3,6 +3,7 @@ set(LIB_SRC
 	ArcObject.cpp
 	AutoReleasePool.cpp
 	AutoReleasePoolManager.cpp
+	Logger.cpp
 	ObjectContainer.cpp
 	)
 

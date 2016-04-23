@@ -3,6 +3,7 @@ include_directories(${PROJECT_SOURCE_DIR}/base)
 link_directories(${PROJECT_BINARY_DIR}/lib)
 
 set(LIB_SRC 
+	Action.cpp
 	Game.cpp
 	GameObject.cpp
 	PicLoader.cpp
