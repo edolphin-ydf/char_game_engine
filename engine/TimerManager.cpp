@@ -15,7 +15,7 @@ TimerManager::~TimerManager() {
 }
 
 void TimerManager::onTimer(Millsecond now) {
-	std::for_each(willHireTimers.begin(), willHireTimers.end(), [this](Timer* timer){ this->addObject(timer); 
+	std::for_each(willHireTimers.begin(), willHireTimers.end(), [this](Timer* timer){ this->addObjectIfNotExist(timer); 
 			timer->release();}); 
 	willHireTimers.clear();
 

@@ -7,6 +7,14 @@
 
 namespace edolphin {
 
+struct DrableAttribute 
+{
+	Point2D position;
+};
+
+
+
+
 class Drawable : public ArcObject
 {
 public:
@@ -16,6 +24,10 @@ public:
 	virtual void draw() = 0;
 
 	SetterGetter<Point2D> position = SetterGetter<Point2D>(_position);	
+
+	DrableAttribute getAttribute();
+	void setAttribute(DrableAttribute attr);
+
 protected:
 	Point2D _position = Point2D(0, 0);
 };

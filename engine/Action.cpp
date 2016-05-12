@@ -21,13 +21,6 @@ ActionMoveTo::~ActionMoveTo() {
 	SafeRelease(this->timer);
 }
 
-void ActionMoveTo::reset() {
-	curStep = 0;
-	timer->stop();
-	SafeRelease(timer);
-	observer->onReset(this);
-}
-
 void ActionMoveTo::action() {
 	curStep++;
 	Point2D newPos = Point2D(oripos.x + speedx * curStep, oripos.y + speedy * curStep);
@@ -53,18 +46,47 @@ void ActionMoveTo::start() {
 	timer = new Timer(INTERVAL, true, [this](Timer* timer, Millsecond now) { this->action(); });
 	observer->onStart(this);
 }
+
+void ActionMoveTo::restart() {
+	curStep = 0;
+	if (timer != nullptr) {
+		timer->stop();
+		SafeRelease(timer);
+	}
+	_owner->position(oripos);
+
+	timer = new Timer(INTERVAL, true, [this](Timer* timer, Millsecond now) { this->action(); });
+	observer->onRestart(this);
+}
 	
-void ActionMoveTo::cancel() {
-	timer->stop();
-	observer->onCancel(this);
+void ActionMoveTo::stop() {
+	if (timer != nullptr) {
+		timer->stop();
+	}
+	observer->onStop(this);
 }
 
 void ActionMoveTo::finished() {
-	timer->stop();
+	if (timer != nullptr) {
+		timer->stop();
+	}
 	_owner->position(dist);
 	observer->onFinished(this);
 }
 
+void ActionMoveTo::pause() {
+	if (timer != nullptr) {
+		timer->pause();
+	}
+	observer->onPause(this);
+}
+
+void ActionMoveTo::resume() {
+	if (timer != nullptr) {
+		timer->resume();
+	}
+	observer->onResume(this);
+}
 
 
 
@@ -89,23 +111,27 @@ ActionSequence* ActionSequence::addAction(ActionObserved* act) {
 	return this;
 }
 
-void ActionSequence::reset() {
-	foreach([this](ActionObserved* a) {a->reset();});
-	currentActionIdx = 0;
-}
-
 void ActionSequence::start() {
 	if (currentActionIdx < _objects.size()) {
 		_objects[currentActionIdx]->start();
 	}
 }
 
+void ActionSequence::restart() {
+	foreach([this](ActionObserved* a) {a->stop();});
+	currentActionIdx = 0;
+	if (currentActionIdx < _objects.size()) {
+		_objects[currentActionIdx]->restart();
+	}
+}
+
+
 void ActionSequence::action() {
 }
 
-void ActionSequence::cancel() {
+void ActionSequence::stop() {
 	if (currentActionIdx < _objects.size()) {
-		_objects[currentActionIdx]->cancel();
+		_objects[currentActionIdx]->stop();
 	}
 }
 
@@ -118,6 +144,18 @@ void ActionSequence::onFinished(ActionObserved* action) {
 		currentActionIdx = 0;
 	}
 	start();
+}
+
+void ActionSequence::pause() {
+	if (currentActionIdx < _objects.size()) {
+		_objects[currentActionIdx]->pause();
+	}
+}
+
+void ActionSequence::resume() {
+	if (currentActionIdx < _objects.size()) {
+		_objects[currentActionIdx]->resume();	
+	}
 }
 
 } /* edolphin */ 

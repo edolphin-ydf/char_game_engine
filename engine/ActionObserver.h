@@ -12,10 +12,13 @@ public:
 	ActionObserver () {};
 	virtual ~ActionObserver () {};
 
-	virtual void onReset(ActionObserved*){}
-	virtual void onStart(ActionObserved*){}
 	virtual void onAction(ActionObserved*){}
-	virtual void onCancel(ActionObserved*){}
+
+	virtual void onStart(ActionObserved*){}
+	virtual void onRestart(ActionObserved*){}
+	virtual void onStop(ActionObserved*){}
+	virtual void onPause(ActionObserved*){}
+	virtual void onResume(ActionObserved*){}
 	virtual void onFinished(ActionObserved*){}
 };
 

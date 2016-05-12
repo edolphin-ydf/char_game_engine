@@ -18,10 +18,11 @@ public:
 	Action (){};
 	virtual ~Action (){};
 
-	virtual void reset() = 0;
 	virtual void start() = 0;
-	virtual void action() = 0;
-	virtual void cancel() = 0;
+	virtual void restart() = 0;
+	virtual void stop() = 0;
+	virtual void pause() = 0;
+	virtual void resume() = 0;
 	virtual void finished() = 0;
 
 	SetterGetter<Drawable*> owner = SetterGetter<Drawable*>(_owner);
@@ -29,6 +30,7 @@ public:
 protected:
 	/* data */
 	Drawable *_owner;
+	virtual void action() = 0;
 };
 
 
@@ -55,18 +57,18 @@ public:
 	ActionMoveTo(Drawable* owner, Point2D to, Millsecond duration);
 
 	virtual ~ActionMoveTo();
-
-	virtual void reset();
-
+	
 	virtual void start();
-
-	virtual void action();
-
-	virtual void cancel();
-
+	virtual void restart();
+	virtual void stop();
+	virtual void pause();
+	virtual void resume();
 	virtual void finished();
 
-public:
+protected:
+	virtual void action();
+
+private:
 	double speedx;
 	double speedy;
 	DWORD moveTimes;
@@ -85,13 +87,17 @@ public:
 
 	ActionSequence* addAction(ActionObserved* act);
 
-	virtual void reset();
 	virtual void start();
-	virtual void action();
-	virtual void cancel();
+	virtual void restart();
+	virtual void stop();
+	virtual void pause();
+	virtual void resume();
 	virtual void finished();
 
 	virtual void onFinished(ActionObserved* action);
+
+protected:
+	virtual void action();
 
 private:
 	DWORD currentActionIdx;

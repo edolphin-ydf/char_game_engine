@@ -16,6 +16,7 @@ set(LIB_SRC
 	KeyboardInputCollector.cpp
 	KeyboardBuffer.cpp
 	KeyboardEventDispatcher.cpp
+	Drawable.cpp
 	)
 
 add_library(libengine ${LIB_SRC})

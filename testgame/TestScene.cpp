@@ -13,7 +13,8 @@ namespace edolphin
 	
 
 TestScene::TestScene() {
-	(new Timer(1000, true, [this](Timer* timer, Millsecond now) {this->generateNewTanc();}))->autoRelease();
+	//(new Timer(1000, true, [this](Timer* timer, Millsecond now) {this->generateNewTanc();}))->autoRelease();
+	generateNewTanc();
 	KeyboardEventDispatcher::getInstance()->regist(this);
 }
 
@@ -40,9 +41,13 @@ void TestScene::draw() {
 
 void TestScene::onKeyPressed(char key) {
 	if (key == 's') {
-		moveSeq->cancel();	
+		moveSeq->stop();	
 	} else if (key == 'r') {
-		moveSeq->start();	
+		moveSeq->resume();	
+	} else if (key == 'p') {
+		moveSeq->pause();
+	} else if (key == 't') {
+		moveSeq->restart();
 	}
 }
 

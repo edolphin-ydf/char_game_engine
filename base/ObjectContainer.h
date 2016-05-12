@@ -18,7 +18,9 @@ public:
 
 	Getter<std::vector<T*> > getObjects = Getter<std::vector<T*> >(_objects);
 
+	bool containObject(T* obj);
 	void addObject(T* obj);
+	void addObjectIfNotExist(T* obj);
 	void addObjectAtIndex(T* obj, int idx);
 	void removeObject(T* ojb);
 	void removeObjectAtIndex(int idx);
@@ -31,9 +33,27 @@ protected:
 };
 
 template<class T>
+bool ObjectContainer<T>::containObject(T* obj) {
+	for (auto o : _objects) {
+		if (o == obj) {
+			return true;
+		}
+	}
+	return false;
+}
+
+template<class T>
 void ObjectContainer<T>::addObject(T* obj) {
 	_objects.push_back(obj);
 	obj->retain();
+}
+
+template<class T>
+void ObjectContainer<T>::addObjectIfNotExist(T* obj) {
+	if (containObject(obj)) {
+		return;
+	}
+	addObject(obj);
 }
 
 template<class T>
