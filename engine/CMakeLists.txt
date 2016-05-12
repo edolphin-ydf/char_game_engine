@@ -13,6 +13,9 @@ set(LIB_SRC
 	PainterCursor.cpp
 	Timer.cpp
 	TimerManager.cpp
+	KeyboardInputCollector.cpp
+	KeyboardBuffer.cpp
+	KeyboardEventDispatcher.cpp
 	)
 
 add_library(libengine ${LIB_SRC})

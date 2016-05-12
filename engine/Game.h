@@ -11,6 +11,8 @@ namespace edolphin {
 
 class Scene;
 class Logger;
+class KeyboardInputCollector;
+class KeyboardBuffer;
 class Game : public Singleton<Game> {
 public:
 	bool init();
@@ -23,6 +25,9 @@ public:
 	SeterGeterRetain(Scene, _scene, Scene);
 
 	static Logger* getLogger();
+
+	GeterRetain(KeyboardBuffer, keyboardBuffer, KeyboardBuffer);
+
 private:
 	friend class Singleton;
 	Game();
@@ -39,6 +44,10 @@ private:
 	PainterDelegate *_painter;
 
 	Scene *_scene = nullptr;
+
+	KeyboardBuffer *keyboardBuffer;
+
+	KeyboardInputCollector* keyboardInputCollector;
 
 	static Logger* logger;
 };

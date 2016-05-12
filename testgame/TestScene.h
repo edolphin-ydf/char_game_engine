@@ -2,12 +2,15 @@
 #define TESTSCENE_H_ZCPE0FZA
 
 #include "Scene.h"
+#include "KeyboardEventListener.h"
+
 namespace edolphin
 {
 	
 
 class Picture;
-class TestScene : public Scene
+class ActionSequence;
+class TestScene : public Scene, public KeyboardEventListener
 {
 public:
 	TestScene ();
@@ -15,9 +18,14 @@ public:
 
 	virtual void draw();
 
+	virtual void onKeyPressed(char key);
+
 private:
 	void generateNewTanc();
+
+	ActionSequence* moveSeq;
 };
+
 } /* edolphin */ 
 
 #endif /* end of include guard: TESTSCENE_H_ZCPE0FZA */

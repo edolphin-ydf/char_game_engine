@@ -6,6 +6,7 @@ link_directories(${PROJECT_BINARY_DIR}/lib)
 set(SOURCE_SRC
 	Main.cpp
 	TestScene.cpp
+	KeyboardEventLogger.cpp
 	)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)

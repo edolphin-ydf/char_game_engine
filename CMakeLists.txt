@@ -15,7 +15,7 @@ endif()
 
 set(ALL_EXECUTEABLE_BIN_COMPILE_FLAGS "-Wall -pedantic -g")
 #set(ALL_LIBRARY_BIN_COMPILE_FLAGS "-Wall -pedantic -g")
-set(CMAKE_CXX_FLAGS "-Wall -pedantic -g -std=c++11")
+set(CMAKE_CXX_FLAGS "-Wall -pedantic -g -std=c++11 -pthread")
 
 add_subdirectory(base)
 

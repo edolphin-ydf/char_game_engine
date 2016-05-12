@@ -6,6 +6,7 @@
 #include "GameObject.h"
 #include "Action.h"
 #include "Timer.h"
+#include "KeyboardEventDispatcher.h"
 
 namespace edolphin
 {
@@ -13,6 +14,7 @@ namespace edolphin
 
 TestScene::TestScene() {
 	(new Timer(1000, true, [this](Timer* timer, Millsecond now) {this->generateNewTanc();}))->autoRelease();
+	KeyboardEventDispatcher::getInstance()->regist(this);
 }
 
 void TestScene::generateNewTanc() {
@@ -24,7 +26,7 @@ void TestScene::generateNewTanc() {
 	ActionMoveTo* move1 = new ActionMoveTo(testPicObj, Point2D(50, 50), 500);
 	ActionMoveTo* move2 = new ActionMoveTo(testPicObj, Point2D(150, 30), 500);
 	ActionMoveTo* move3 = new ActionMoveTo(testPicObj, Point2D(0, 0), 500);
-	ActionSequence* moveSeq = new ActionSequence(true);
+	moveSeq = new ActionSequence(true);
 	moveSeq->addAction(move1)->addAction(move2)->addAction(move3);
 	moveSeq->start();
 }
@@ -36,4 +38,14 @@ void TestScene::draw() {
 	Scene::draw();
 }
 
+void TestScene::onKeyPressed(char key) {
+	if (key == 's') {
+		moveSeq->cancel();	
+	} else if (key == 'r') {
+		moveSeq->start();	
+	}
+}
+
+
 } /* edolphin */ 
+
