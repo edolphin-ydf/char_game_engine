@@ -15,6 +15,20 @@ namespace edolphin {
 class Action : public ArcObject
 {
 public:
+	enum State {
+		StateWaiteToRun = 0,
+		StateRunning,
+		StatePause,
+	};
+
+	enum Operation {
+		OperationStart,
+		OperationRestart,
+		OperationStop,
+		OperationPause,
+		OperationResume
+	};
+
 	Action (){};
 	virtual ~Action (){};
 
@@ -30,7 +44,10 @@ public:
 protected:
 	/* data */
 	Drawable *_owner;
+	State state = StateWaiteToRun;
+
 	virtual void action() = 0;
+	virtual bool isOperationValid(Operation op);
 };
 
 
@@ -67,6 +84,7 @@ public:
 
 protected:
 	virtual void action();
+	void reset();
 
 private:
 	double speedx;

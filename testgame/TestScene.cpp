@@ -48,6 +48,8 @@ void TestScene::onKeyPressed(char key) {
 		moveSeq->pause();
 	} else if (key == 't') {
 		moveSeq->restart();
+	} else if (key == 'a') {
+		moveSeq->start();
 	}
 }
 

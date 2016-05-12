@@ -7,7 +7,37 @@
 
 namespace edolphin
 {
-	
+
+bool Action::isOperationValid(Operation op)	{
+	switch (op) {
+		case OperationStart:
+			if (state == StateWaiteToRun) {
+				return true;
+			}
+			break;
+		case OperationRestart:
+			if (state == StateRunning || state == StatePause) {
+				return true;
+			}
+			break;
+		case OperationStop:
+			if (state == StateRunning) {
+				return true;
+			}
+			break;
+		case OperationPause:
+			if (state == StateRunning) {
+				return true;
+			}
+			break;
+		case OperationResume:
+			if (state == StatePause) {
+				return true;
+			}
+			break;
+	}
+	return false;
+}
 
 ActionMoveTo::ActionMoveTo(Drawable* owner, Point2D to, Millsecond duration) {
 	this->dist = to;
@@ -30,7 +60,20 @@ void ActionMoveTo::action() {
 	}
 }
 
+void ActionMoveTo::reset() {
+	curStep = 0;
+	if (timer != nullptr) {
+		timer->stop();
+		SafeRelease(timer);
+	}
+	_owner->position(oripos);
+}
+
 void ActionMoveTo::start() {
+	if (!isOperationValid(OperationStart)) {
+		return;	
+	}
+
 	int disx = dist.x - _owner->position().x;
 	int disy = dist.y - _owner->position().y;
 	moveTimes = duration / INTERVAL;
@@ -44,25 +87,32 @@ void ActionMoveTo::start() {
 
 	SafeRelease(timer);
 	timer = new Timer(INTERVAL, true, [this](Timer* timer, Millsecond now) { this->action(); });
+
+	state = StateRunning;
 	observer->onStart(this);
 }
 
 void ActionMoveTo::restart() {
-	curStep = 0;
-	if (timer != nullptr) {
-		timer->stop();
-		SafeRelease(timer);
+	if (!isOperationValid(OperationRestart)) {
+		return;	
 	}
-	_owner->position(oripos);
+
+	reset();
 
 	timer = new Timer(INTERVAL, true, [this](Timer* timer, Millsecond now) { this->action(); });
+
+	state = StateRunning;
 	observer->onRestart(this);
 }
 	
 void ActionMoveTo::stop() {
-	if (timer != nullptr) {
-		timer->stop();
+	if (!isOperationValid(OperationStop)) {
+		return;	
 	}
+
+	reset();
+
+	state = StateWaiteToRun;
 	observer->onStop(this);
 }
 
@@ -71,20 +121,34 @@ void ActionMoveTo::finished() {
 		timer->stop();
 	}
 	_owner->position(dist);
+
+	state = StateWaiteToRun;
 	observer->onFinished(this);
 }
 
 void ActionMoveTo::pause() {
+	if (!isOperationValid(OperationPause)) {
+		return;	
+	}
+
 	if (timer != nullptr) {
 		timer->pause();
 	}
+
+	state = StatePause;
 	observer->onPause(this);
 }
 
 void ActionMoveTo::resume() {
+	if (!isOperationValid(OperationResume)) {
+		return;	
+	}
+
 	if (timer != nullptr) {
 		timer->resume();
 	}
+
+	state = StateRunning;
 	observer->onResume(this);
 }
 
@@ -112,17 +176,29 @@ ActionSequence* ActionSequence::addAction(ActionObserved* act) {
 }
 
 void ActionSequence::start() {
+	if (!isOperationValid(OperationStart)) {
+		return;	
+	}
+
 	if (currentActionIdx < _objects.size()) {
 		_objects[currentActionIdx]->start();
 	}
+
+	state = StateRunning;
 }
 
 void ActionSequence::restart() {
-	foreach([this](ActionObserved* a) {a->stop();});
+	if (!isOperationValid(OperationRestart)) {
+		return;	
+	}
+
+	foreach([this](ActionObserved* a) { if( a != this->_objects[0]) a->stop();});
 	currentActionIdx = 0;
 	if (currentActionIdx < _objects.size()) {
 		_objects[currentActionIdx]->restart();
 	}
+
+	state = StateRunning;
 }
 
 
@@ -130,32 +206,58 @@ void ActionSequence::action() {
 }
 
 void ActionSequence::stop() {
+	if (!isOperationValid(OperationStop)) {
+		return;	
+	}
+
 	if (currentActionIdx < _objects.size()) {
 		_objects[currentActionIdx]->stop();
 	}
+
+	state = StateWaiteToRun;
 }
 
 void ActionSequence::finished() {
+	state = StateWaiteToRun;
 }
 
 void ActionSequence::onFinished(ActionObserved* action) {
 	currentActionIdx++;
-	if (currentActionIdx >= _objects.size() && repeat) {
-		currentActionIdx = 0;
+	if (currentActionIdx >= _objects.size()) {
+		if (repeat) {
+			currentActionIdx = 0;
+		} else {
+			finished();
+		}
 	}
-	start();
+
+	if (currentActionIdx < _objects.size()) {
+		_objects[currentActionIdx]->start();
+	}
 }
 
 void ActionSequence::pause() {
+	if (!isOperationValid(OperationPause)) {
+		return;	
+	}
+
 	if (currentActionIdx < _objects.size()) {
 		_objects[currentActionIdx]->pause();
 	}
+
+	state = StatePause;
 }
 
 void ActionSequence::resume() {
+	if (!isOperationValid(OperationResume)) {
+		return;	
+	}
+
 	if (currentActionIdx < _objects.size()) {
 		_objects[currentActionIdx]->resume();	
 	}
+
+	state = StateRunning;
 }
 
 } /* edolphin */ 
