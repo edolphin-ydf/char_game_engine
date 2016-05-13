@@ -32,6 +32,7 @@ public:
 	virtual void setBackgroundColor(Color background);
 	virtual void setForegroundColor(Color foreground);
 
+	virtual Size getViewSize();
 private:
 	/* data */
 	Color _foregroundColor = Color::white;

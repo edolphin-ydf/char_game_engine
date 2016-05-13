@@ -103,5 +103,12 @@ void PainterCursor::setForegroundColor(Color foreground) {
 	_foregroundColor = foreground;
 }
 
+	
+Size PainterCursor::getViewSize() {
+	//int width, height;
+	//getmaxyx(stdscr, height, width);
+	//return Size(width, height);
+	return Size(268, 56);
+}
 
 }

@@ -7,6 +7,7 @@
 #include "Action.h"
 #include "Timer.h"
 #include "KeyboardEventDispatcher.h"
+#include "MainCharacter.h"
 
 namespace edolphin
 {
@@ -14,8 +15,10 @@ namespace edolphin
 
 TestScene::TestScene() {
 	//(new Timer(1000, true, [this](Timer* timer, Millsecond now) {this->generateNewTanc();}))->autoRelease();
-	generateNewTanc();
-	KeyboardEventDispatcher::getInstance()->regist(this);
+	//generateNewTanc();
+	//KeyboardEventDispatcher::getInstance()->regist(this);
+	
+	mc = new MainCharacter();
 }
 
 void TestScene::generateNewTanc() {
@@ -33,10 +36,12 @@ void TestScene::generateNewTanc() {
 }
 
 TestScene::~TestScene() {
+	mc->release();
 }
 
 void TestScene::draw() {
 	Scene::draw();
+	mc->draw();
 }
 
 void TestScene::onKeyPressed(char key) {

@@ -37,6 +37,8 @@ public:
 	virtual void setColorPair(Color foreground, Color background) = 0;
 	virtual void setBackgroundColor(Color background) = 0;
 	virtual void setForegroundColor(Color foreground) = 0;
+
+	virtual Size getViewSize()  = 0;
 };
 
 }

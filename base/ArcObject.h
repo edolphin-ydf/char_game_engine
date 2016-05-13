@@ -85,9 +85,9 @@ public:
 	virtual ~ArcObject(void);
 	
 public:
-	void retain();
-	void release();
-	void autoRelease();
+	virtual void retain();
+	virtual void release();
+	virtual void autoRelease();
 
     //GeterAssign(int, retainCount, RetainCount);
 //	int getRetainCount(){return retainCount;}

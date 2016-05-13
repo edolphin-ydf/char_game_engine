@@ -58,6 +58,7 @@ void ActionMoveTo::action() {
 	if (curStep >= moveTimes) {
 		this->finished();
 	}
+	observer->onAction(this);
 }
 
 void ActionMoveTo::reset() {
@@ -195,7 +196,8 @@ void ActionSequence::restart() {
 	foreach([this](ActionObserved* a) { if( a != this->_objects[0]) a->stop();});
 	currentActionIdx = 0;
 	if (currentActionIdx < _objects.size()) {
-		_objects[currentActionIdx]->restart();
+		_objects[currentActionIdx]->stop();
+		_objects[currentActionIdx]->start();
 	}
 
 	state = StateRunning;

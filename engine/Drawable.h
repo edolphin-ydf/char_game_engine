@@ -22,6 +22,7 @@ public:
 	virtual ~Drawable () {};
 
 	virtual void draw() = 0;
+	virtual Size getSize(){ return size; }
 
 	SetterGetter<Point2D> position = SetterGetter<Point2D>(_position);	
 
@@ -30,6 +31,7 @@ public:
 
 protected:
 	Point2D _position = Point2D(0, 0);
+	Size size;
 };
 
 }

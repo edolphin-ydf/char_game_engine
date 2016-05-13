@@ -31,8 +31,25 @@ struct BasePoint2D {
 	}
 };
 
+template<class T>
+struct BaseSize {
+	BaseSize() {}
+	BaseSize(T _width, T _height): width(_width), height(_height){}
+	T width;
+	T height;
+
+	//BaseSize operator + (BaseSize b) {
+		//return BaseSize(width + b.width, height + b.height);
+	//}
+	
+	//BaseSize operator - (BaseSize b) {
+		//return BaseSize(width - b.width, height - b.height);
+	//}
+};
+
 typedef BasePoint2D<int> Point2D; 
 typedef BasePoint2D<float> Point2DF;
 
+typedef BaseSize<int> Size;
 
 #endif /* end of include guard: BASETYPE_H_2ZCARIIQ */

@@ -23,6 +23,8 @@ public:
 
 	SeterGeterAssign(DWORD, width, Width);
 	SeterGeterAssign(DWORD, height, Height);
+
+	Size getSize();
 	
 private:
 	/* data */

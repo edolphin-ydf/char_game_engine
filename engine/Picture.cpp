@@ -17,5 +17,9 @@ Picture::Picture(BYTE* data, DWORD width, DWORD height) {
 Picture::~Picture () {
 	SafeDeleteS(data);
 }
+	
+Size Picture::getSize() {
+	return Size(width, height);
+}
 
 }

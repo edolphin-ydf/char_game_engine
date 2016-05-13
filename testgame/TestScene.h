@@ -10,6 +10,7 @@ namespace edolphin
 
 class Picture;
 class ActionSequence;
+class MainCharacter;
 class TestScene : public Scene, public KeyboardEventListener
 {
 public:
@@ -24,6 +25,8 @@ private:
 	void generateNewTanc();
 
 	ActionSequence* moveSeq;
+
+	MainCharacter* mc;
 };
 
 } /* edolphin */ 
