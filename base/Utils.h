@@ -3,6 +3,8 @@
 
 #include <sys/time.h>
 #include <time.h>
+#include <stdlib.h>
+#include <algorithm>
 
 namespace edolphin {
 
@@ -20,6 +22,16 @@ public:
 
 	static unsigned long getTimeStamp() {
 		return time(nullptr);
+	}
+
+	static int randBetween(int a, int b) {
+		if (a == b) {
+			return a;
+		}
+		if (a > b) {
+			std::swap(a, b);
+		}
+		return rand() % (b - a + 1) + a;
 	}
 };
 

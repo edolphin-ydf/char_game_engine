@@ -2,11 +2,12 @@
 #define ACTIONOBSERVER_H_CNSUK7TJ
 
 #include "ArcObject.h"
+
 namespace edolphin
 {
 
 class ActionObserved;
-class ActionObserver : public ArcObject
+class ActionObserver: public ArcObject
 {
 public:
 	ActionObserver () {};

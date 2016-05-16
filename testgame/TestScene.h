@@ -3,11 +3,12 @@
 
 #include "Scene.h"
 #include "KeyboardEventListener.h"
+#include <vector>
 
 namespace edolphin
 {
 	
-
+class TankRobot;
 class Picture;
 class ActionSequence;
 class MainCharacter;
@@ -21,12 +22,17 @@ public:
 
 	virtual void onKeyPressed(char key);
 
+	void addTankRobot(TankRobot* tr);
+	void removeTankRobot(TankRobot* tr);
+
 private:
 	void generateNewTanc();
 
 	ActionSequence* moveSeq;
 
 	MainCharacter* mc;
+
+	std::vector<TankRobot*> tankRobots;
 };
 
 } /* edolphin */ 

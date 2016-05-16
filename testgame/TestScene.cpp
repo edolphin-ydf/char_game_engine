@@ -8,6 +8,7 @@
 #include "Timer.h"
 #include "KeyboardEventDispatcher.h"
 #include "MainCharacter.h"
+#include "TankRobot.h"
 
 namespace edolphin
 {
@@ -58,6 +59,22 @@ void TestScene::onKeyPressed(char key) {
 	}
 }
 
+	
+void TestScene::addTankRobot(TankRobot* tr) {
+	tankRobots.push_back(tr);
+	addObject((Drawable*)tr);
+	//tr->retain();
+}
+
+void TestScene::removeTankRobot(TankRobot* tr) {
+	for (auto t = tankRobots.begin(); t != tankRobots.end(); ++t) {
+		if ((*t)== tr) {
+			tankRobots.erase(t);
+			//tr->release();
+			break;
+		}
+	}
+}
 
 } /* edolphin */ 
 
