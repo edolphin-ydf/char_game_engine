@@ -13,25 +13,44 @@ struct DrableAttribute
 };
 
 
+enum DrawableGeometryType {
+	DrawableGeometryTypePoint,
+	DrawableGeometryTypeLine,
+	DrawableGeometryTypeRect,
+	DrawableGeometryTypeCircle,
+	DrawableGeometryTypePolygon,
+};
 
 
-class Drawable : public ArcObject
+class Drawable : public virtual ArcObject
 {
 public:
 	Drawable () {};
 	virtual ~Drawable () {};
 
 	virtual void draw() = 0;
+	virtual void onCollision(Drawable *another) {}
+	
+	virtual Rect getRect();
 	virtual Size getSize(){ return size; }
-
-	SetterGetter<Point2D> position = SetterGetter<Point2D>(_position);	
 
 	DrableAttribute getAttribute();
 	void setAttribute(DrableAttribute attr);
 
+
+	SetterGetter<Point2D> position = SetterGetter<Point2D>(_position);	
+	SeterAssign(bool, collisionable, Collisionable);
+	SeterGeterAssign(DrawableGeometryType, geometryType, GeometryType);
+	bool isCollisionable() {
+		return collisionable;
+	}
+
 protected:
 	Point2D _position = Point2D(0, 0);
-	Size size;
+	Size size = Size(0, 0);
+
+	DrawableGeometryType geometryType = DrawableGeometryTypeRect;
+	bool collisionable = false;
 };
 
 }

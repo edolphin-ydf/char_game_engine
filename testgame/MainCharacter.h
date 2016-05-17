@@ -19,7 +19,6 @@ public:
 
 	virtual void draw();
 
-	virtual void release() { Drawable::release();};
 private:
 
 	Picture* picture = nullptr;

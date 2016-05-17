@@ -8,6 +8,9 @@ namespace edolphin
 	
 
 Bullet::Bullet(Drawable* owner) {
+	collisionable = true;
+	geometryType = DrawableGeometryTypePoint;
+
 	_position = owner->position();
 	_position.x += owner->getSize().width / 2;	
 	
@@ -36,6 +39,10 @@ void Bullet::onAction(ActionObserved* act) {
 
 void Bullet::draw() {
 	Game::getInstance()->getPainter()->drawPoint(_position);
+}
+
+void Bullet::onCollision(Drawable* another) {
+
 }
 
 

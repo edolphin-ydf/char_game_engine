@@ -13,6 +13,8 @@ public:
 	virtual ~Scene () {};
 
 	virtual void draw();
+
+	virtual void collisionDection();
 private:
 	/* data */
 };

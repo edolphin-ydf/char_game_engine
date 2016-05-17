@@ -6,7 +6,7 @@
 namespace edolphin {
 
 
-class KeyboardEventListener : public ArcObject
+class KeyboardEventListener : public virtual ArcObject
 {
 public:
 	KeyboardEventListener (){};

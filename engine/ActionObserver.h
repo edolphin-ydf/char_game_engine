@@ -7,7 +7,7 @@ namespace edolphin
 {
 
 class ActionObserved;
-class ActionObserver: public ArcObject
+class ActionObserver: public virtual ArcObject
 {
 public:
 	ActionObserver () {};

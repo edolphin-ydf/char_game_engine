@@ -19,6 +19,7 @@ public:
 	virtual void onAction(ActionObserved* act);
 
 	virtual void draw();
+	virtual void onCollision(Drawable* another);
 private:
 	/* data */
 	Drawable* owner;

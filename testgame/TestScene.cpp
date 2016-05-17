@@ -63,14 +63,14 @@ void TestScene::onKeyPressed(char key) {
 void TestScene::addTankRobot(TankRobot* tr) {
 	tankRobots.push_back(tr);
 	addObject((Drawable*)tr);
-	//tr->retain();
+	tr->retain();
 }
 
 void TestScene::removeTankRobot(TankRobot* tr) {
 	for (auto t = tankRobots.begin(); t != tankRobots.end(); ++t) {
 		if ((*t)== tr) {
 			tankRobots.erase(t);
-			//tr->release();
+			tr->release();
 			break;
 		}
 	}

@@ -14,6 +14,9 @@ void Drawable::setAttribute(DrableAttribute attr) {
 	this->_position = attr.position;
 }
 
+Rect Drawable::getRect() {
+	return Rect(_position, size);
+}
 
 
 } /* edolphin */ 

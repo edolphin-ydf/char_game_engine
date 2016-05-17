@@ -17,6 +17,7 @@ set(LIB_SRC
 	KeyboardBuffer.cpp
 	KeyboardEventDispatcher.cpp
 	Drawable.cpp
+	CollisionDetection.cpp
 	)
 
 add_library(libengine ${LIB_SRC})
